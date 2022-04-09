@@ -28,8 +28,8 @@ namespace QuanLyBenhVien
         {
 
             OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = "SELECT * FROM Dba_tab_privs";
-            //cmd.CommandText = "select grantee,owner,table_name,privilege,grantable from Dba_tab_privs where owner='QTV'";
+            //cmd.CommandText = "SELECT grantee,owner,table_name,privilege,grantable FROM Dba_tab_privs";
+            cmd.CommandText = "select grantee,owner,table_name,privilege,grantable from Dba_tab_privs where owner='QTV'";
 
             //cmd.CommandText = "select grantee,table_name,column_name ,privilege,grantable from Dba_col_privs ";
             cmd.Connection = conn;

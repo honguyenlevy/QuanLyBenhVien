@@ -35,6 +35,8 @@ namespace QuanLyBenhVien
         }
         private void btnDanhSach_Click(object sender, EventArgs e)
         {
+           // btnDanhSach.BackColor = Color.Green;
+
             OpenFormAdmin(new Admin_DanhSach(), sender);
         }
 

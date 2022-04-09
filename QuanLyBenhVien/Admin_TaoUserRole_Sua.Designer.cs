@@ -46,6 +46,7 @@
             // 
             // dataGridViewAlter
             // 
+            this.dataGridViewAlter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewAlter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dataGridViewAlter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -62,7 +63,7 @@
             this.dataGridViewAlter.Name = "dataGridViewAlter";
             this.dataGridViewAlter.RowHeadersWidth = 51;
             this.dataGridViewAlter.RowTemplate.Height = 24;
-            this.dataGridViewAlter.Size = new System.Drawing.Size(1016, 485);
+            this.dataGridViewAlter.Size = new System.Drawing.Size(1016, 511);
             this.dataGridViewAlter.TabIndex = 0;
             this.dataGridViewAlter.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -70,7 +71,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 33);
+            this.label1.Location = new System.Drawing.Point(202, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 25);
@@ -89,7 +90,7 @@
             // textPassword
             // 
             this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(358, 87);
+            this.textPassword.Location = new System.Drawing.Point(358, 71);
             this.textPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(308, 30);
@@ -98,7 +99,7 @@
             // textConfirmPassword
             // 
             this.textConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textConfirmPassword.Location = new System.Drawing.Point(358, 147);
+            this.textConfirmPassword.Location = new System.Drawing.Point(358, 121);
             this.textConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textConfirmPassword.Name = "textConfirmPassword";
             this.textConfirmPassword.Size = new System.Drawing.Size(308, 30);
@@ -109,7 +110,7 @@
             this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApply.Location = new System.Drawing.Point(778, 71);
+            this.btnApply.Location = new System.Drawing.Point(770, 55);
             this.btnApply.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(165, 62);
@@ -122,7 +123,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(107, 92);
+            this.label2.Location = new System.Drawing.Point(162, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 25);
@@ -134,7 +135,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(78, 152);
+            this.label3.Location = new System.Drawing.Point(133, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 25);
@@ -154,17 +155,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 206);
+            this.panel1.Size = new System.Drawing.Size(1016, 180);
             this.panel1.TabIndex = 8;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridViewAlter);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 206);
+            this.panel2.Location = new System.Drawing.Point(0, 180);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1016, 485);
+            this.panel2.Size = new System.Drawing.Size(1016, 511);
             this.panel2.TabIndex = 9;
             // 
             // Admin_TaoUserRole_Sua

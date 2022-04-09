@@ -131,3 +131,30 @@ D:\HTTT\QUANLIBENHVIEN\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.cs
 D:\HTTT\QUANLIBENHVIEN\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.CoreCompileInputs.cache
 D:\HTTT\QUANLIBENHVIEN\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe
 D:\HTTT\QUANLIBENHVIEN\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.pdb
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe.config
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.pdb
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\bin\Debug\Oracle.DataAccess.dll
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csprojAssemblyReference.cache
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_Role.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_RoleUser.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_User.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_DanhSach.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_Menu.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Sua.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Tao.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Xoa.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThongTinQuyen.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_Role.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_RoleUser.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_User.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.DangNhap.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Main.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Properties.Resources.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.GenerateResource.cache
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.CopyComplete
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.pdb

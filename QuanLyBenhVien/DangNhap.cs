@@ -20,12 +20,15 @@ namespace QuanLyBenhVien
 
         public DangNhap()
         {
+            
             InitializeComponent();
+           
         }
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-
+            textPassword.Text = "";
+            textUsername.Text = "";
         }
 
         private void OpenForm(Form childForm, object btnSender)
@@ -71,6 +74,8 @@ namespace QuanLyBenhVien
                 if (conn.State != ConnectionState.Open)
                 {
                     conn.Open();
+                    textUsername.Text = "";
+                    textPassword.Text = "";
                 }
                
                 OpenForm(new Admin_Menu(), sender);
@@ -79,6 +84,7 @@ namespace QuanLyBenhVien
             {
                 MessageBox.Show("Sai mật khẩu hoặc password !", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
     }
 

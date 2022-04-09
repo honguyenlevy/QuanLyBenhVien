@@ -35,8 +35,10 @@
             this.checkBoxRole = new System.Windows.Forms.CheckBox();
             this.btnXoaRole_User = new System.Windows.Forms.Button();
             this.dataGridViewXoaUserRole = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXoaUserRole)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,6 +103,7 @@
             // 
             // dataGridViewXoaUserRole
             // 
+            this.dataGridViewXoaUserRole.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewXoaUserRole.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dataGridViewXoaUserRole.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -112,7 +115,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewXoaUserRole.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewXoaUserRole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewXoaUserRole.Location = new System.Drawing.Point(0, 95);
+            this.dataGridViewXoaUserRole.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewXoaUserRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewXoaUserRole.Name = "dataGridViewXoaUserRole";
             this.dataGridViewXoaUserRole.RowHeadersWidth = 51;
@@ -121,12 +124,21 @@
             this.dataGridViewXoaUserRole.TabIndex = 1;
             this.dataGridViewXoaUserRole.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewXoaUserRole_CellContentClick);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridViewXoaUserRole);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 95);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1016, 596);
+            this.panel2.TabIndex = 1;
+            // 
             // Admin_TaoUserRole_Xoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 691);
-            this.Controls.Add(this.dataGridViewXoaUserRole);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -136,6 +148,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXoaUserRole)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -148,5 +161,6 @@
         private System.Windows.Forms.DataGridView dataGridViewXoaUserRole;
         private System.Windows.Forms.TextBox textSelectedUserRole;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

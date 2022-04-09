@@ -266,5 +266,10 @@ namespace QuanLyBenhVien
                 }
             }
         }
+
+        private void checkBoxUpdate_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
  }

@@ -34,6 +34,8 @@
             this.comboBoxUser = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBoxWithGrantOption = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGrant
@@ -43,10 +45,10 @@
             this.btnGrant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
             this.btnGrant.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGrant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrant.Location = new System.Drawing.Point(735, 296);
-            this.btnGrant.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGrant.Location = new System.Drawing.Point(239, 357);
+            this.btnGrant.Margin = new System.Windows.Forms.Padding(6);
             this.btnGrant.Name = "btnGrant";
-            this.btnGrant.Size = new System.Drawing.Size(152, 62);
+            this.btnGrant.Size = new System.Drawing.Size(290, 62);
             this.btnGrant.TabIndex = 20;
             this.btnGrant.Text = "Grant";
             this.btnGrant.UseVisualStyleBackColor = false;
@@ -58,7 +60,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 114);
+            this.label1.Location = new System.Drawing.Point(55, 97);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 25);
@@ -73,10 +75,10 @@
             this.comboBoxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(146, 106);
+            this.comboBoxRole.Location = new System.Drawing.Point(156, 89);
             this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(511, 33);
+            this.comboBoxRole.Size = new System.Drawing.Size(505, 33);
             this.comboBoxRole.TabIndex = 14;
             this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxUser_SelectedIndexChanged);
             // 
@@ -87,10 +89,10 @@
             this.comboBoxUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxUser.FormattingEnabled = true;
-            this.comboBoxUser.Location = new System.Drawing.Point(146, 225);
+            this.comboBoxUser.Location = new System.Drawing.Point(156, 180);
             this.comboBoxUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxUser.Name = "comboBoxUser";
-            this.comboBoxUser.Size = new System.Drawing.Size(511, 33);
+            this.comboBoxUser.Size = new System.Drawing.Size(505, 33);
             this.comboBoxUser.TabIndex = 18;
             this.comboBoxUser.SelectedIndexChanged += new System.EventHandler(this.comboBoxColumn_SelectedIndexChanged);
             // 
@@ -100,7 +102,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 233);
+            this.label2.Location = new System.Drawing.Point(55, 188);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 25);
@@ -114,13 +116,27 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxWithGrantOption.AutoSize = true;
             this.checkBoxWithGrantOption.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWithGrantOption.Location = new System.Drawing.Point(716, 165);
-            this.checkBoxWithGrantOption.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkBoxWithGrantOption.Location = new System.Drawing.Point(270, 279);
+            this.checkBoxWithGrantOption.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxWithGrantOption.Name = "checkBoxWithGrantOption";
             this.checkBoxWithGrantOption.Size = new System.Drawing.Size(198, 29);
             this.checkBoxWithGrantOption.TabIndex = 21;
             this.checkBoxWithGrantOption.Text = "With Admin Option";
             this.checkBoxWithGrantOption.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnGrant);
+            this.panel1.Controls.Add(this.checkBoxWithGrantOption);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.comboBoxUser);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.comboBoxRole);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1010, 686);
+            this.panel1.TabIndex = 22;
             // 
             // Admin_CapQuyen_RoleUser
             // 
@@ -128,19 +144,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1010, 686);
-            this.Controls.Add(this.checkBoxWithGrantOption);
-            this.Controls.Add(this.btnGrant);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBoxRole);
-            this.Controls.Add(this.comboBoxUser);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Admin_CapQuyen_RoleUser";
             this.Text = "Admin_CapQuyen_RoleUser";
             this.Load += new System.EventHandler(this.Admin_CapQuyen_RoleUser_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -152,5 +164,6 @@
         private System.Windows.Forms.ComboBox comboBoxUser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBoxWithGrantOption;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -64,6 +64,7 @@ namespace QuanLyBenhVien
 
         private void btnApply_Click(object sender, EventArgs e)
         {
+
             DialogResult dialogResult = MessageBox.Show("Your user password will change", "Do you want to save ?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {

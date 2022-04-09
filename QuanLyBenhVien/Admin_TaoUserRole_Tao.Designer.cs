@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 133);
+            this.label1.Location = new System.Drawing.Point(122, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 25);
@@ -53,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 228);
+            this.label2.Location = new System.Drawing.Point(122, 155);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 25);
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(122, 314);
+            this.label3.Location = new System.Drawing.Point(122, 241);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 25);
@@ -75,7 +75,7 @@
             // textUsername
             // 
             this.textUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textUsername.Location = new System.Drawing.Point(368, 125);
+            this.textUsername.Location = new System.Drawing.Point(368, 52);
             this.textUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textUsername.Name = "textUsername";
             this.textUsername.Size = new System.Drawing.Size(324, 30);
@@ -84,7 +84,7 @@
             // textPassword
             // 
             this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(368, 220);
+            this.textPassword.Location = new System.Drawing.Point(368, 147);
             this.textPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
@@ -94,7 +94,7 @@
             // textConfirmPassword
             // 
             this.textConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textConfirmPassword.Location = new System.Drawing.Point(368, 306);
+            this.textConfirmPassword.Location = new System.Drawing.Point(368, 233);
             this.textConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textConfirmPassword.Name = "textConfirmPassword";
             this.textConfirmPassword.PasswordChar = '*';
@@ -105,7 +105,7 @@
             // 
             this.checkBoxRole.AutoSize = true;
             this.checkBoxRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRole.Location = new System.Drawing.Point(848, 151);
+            this.checkBoxRole.Location = new System.Drawing.Point(848, 78);
             this.checkBoxRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxRole.Name = "checkBoxRole";
             this.checkBoxRole.Size = new System.Drawing.Size(73, 29);
@@ -119,7 +119,7 @@
             this.btn_Tao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
             this.btn_Tao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Tao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Tao.Location = new System.Drawing.Point(392, 400);
+            this.btn_Tao.Location = new System.Drawing.Point(392, 327);
             this.btn_Tao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Tao.Name = "btn_Tao";
             this.btn_Tao.Size = new System.Drawing.Size(276, 62);

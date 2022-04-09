@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panelMenuAdmin = new System.Windows.Forms.Panel();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnThuQuyen = new System.Windows.Forms.Button();
             this.btnCapQuyen = new System.Windows.Forms.Button();
             this.btnTaoUserRole = new System.Windows.Forms.Button();
             this.btnDanhSach = new System.Windows.Forms.Button();
             this.btnThongTinQuyen = new System.Windows.Forms.Button();
             this.panelDesktopAdmin = new System.Windows.Forms.Panel();
-            this.btnDangXuat = new System.Windows.Forms.Button();
             this.panelMenuAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,10 +56,22 @@
             this.panelMenuAdmin.Size = new System.Drawing.Size(344, 931);
             this.panelMenuAdmin.TabIndex = 3;
             // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 448);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(344, 94);
+            this.btnDangXuat.TabIndex = 5;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
             // btnThuQuyen
             // 
             this.btnThuQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThuQuyen.Location = new System.Drawing.Point(0, 339);
+            this.btnThuQuyen.Location = new System.Drawing.Point(0, 359);
             this.btnThuQuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnThuQuyen.Name = "btnThuQuyen";
             this.btnThuQuyen.Size = new System.Drawing.Size(344, 94);
@@ -71,7 +83,7 @@
             // btnCapQuyen
             // 
             this.btnCapQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCapQuyen.Location = new System.Drawing.Point(0, 256);
+            this.btnCapQuyen.Location = new System.Drawing.Point(0, 269);
             this.btnCapQuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCapQuyen.Name = "btnCapQuyen";
             this.btnCapQuyen.Size = new System.Drawing.Size(344, 94);
@@ -83,7 +95,7 @@
             // btnTaoUserRole
             // 
             this.btnTaoUserRole.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTaoUserRole.Location = new System.Drawing.Point(0, 170);
+            this.btnTaoUserRole.Location = new System.Drawing.Point(0, 179);
             this.btnTaoUserRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnTaoUserRole.Name = "btnTaoUserRole";
             this.btnTaoUserRole.Size = new System.Drawing.Size(344, 94);
@@ -96,6 +108,7 @@
             // 
             this.btnDanhSach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDanhSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhSach.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDanhSach.Location = new System.Drawing.Point(0, 0);
             this.btnDanhSach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDanhSach.Name = "btnDanhSach";
@@ -108,7 +121,7 @@
             // btnThongTinQuyen
             // 
             this.btnThongTinQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThongTinQuyen.Location = new System.Drawing.Point(0, 84);
+            this.btnThongTinQuyen.Location = new System.Drawing.Point(0, 89);
             this.btnThongTinQuyen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnThongTinQuyen.Name = "btnThongTinQuyen";
             this.btnThongTinQuyen.Size = new System.Drawing.Size(344, 94);
@@ -127,18 +140,6 @@
             this.panelDesktopAdmin.Name = "panelDesktopAdmin";
             this.panelDesktopAdmin.Size = new System.Drawing.Size(1070, 931);
             this.panelDesktopAdmin.TabIndex = 4;
-            // 
-            // btnDangXuat
-            // 
-            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 418);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(344, 94);
-            this.btnDangXuat.TabIndex = 5;
-            this.btnDangXuat.Text = "Đăng xuất";
-            this.btnDangXuat.UseVisualStyleBackColor = true;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // Admin_Menu
             // 

@@ -28,7 +28,7 @@ namespace QuanLyBenhVien
         {
            
             OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = "select * from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
+            cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type,last_login from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
 
             cmd.Connection = conn;
 
