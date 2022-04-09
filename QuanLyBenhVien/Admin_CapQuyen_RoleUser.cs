@@ -67,7 +67,7 @@ namespace QuanLyBenhVien
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Grant Role thành công!");
+                MessageBox.Show("GRANT ROLE SUCCESSFULLY");
 
             }
             catch (Exception ex)

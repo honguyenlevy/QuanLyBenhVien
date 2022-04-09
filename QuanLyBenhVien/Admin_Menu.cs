@@ -35,40 +35,110 @@ namespace QuanLyBenhVien
         }
         private void btnDanhSach_Click(object sender, EventArgs e)
         {
-           // btnDanhSach.BackColor = Color.Green;
+           
+            btnDanhSach.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
             OpenFormAdmin(new Admin_DanhSach(), sender);
         }
 
         private void btnThongTinQuyen_Click(object sender, EventArgs e)
         {
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+
             OpenFormAdmin(new Admin_ThongTinQuyen(), sender);
         }
 
         private void btnTaoUserRole_Click(object sender, EventArgs e)
         {
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+
             OpenFormAdmin(new Admin_TaoUserRole(), sender);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFormAdmin(new Admin_CapQuyen(), sender);
-        }
+       
 
         private void btnCapQuyen_Click(object sender, EventArgs e)
         {
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_CapQuyen(), sender);
         }
 
         private void btnThuQuyen_Click(object sender, EventArgs e)
         {
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(107, 155, 55);
+
             OpenFormAdmin(new Admin_ThuQuyen(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Close();
-            OpenFormAdmin(new DangNhap(), sender);
+            btnDangXuat.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            DialogResult dialogResult = MessageBox.Show("Choose yes to log out", "Do you want to log out  ?", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                OpenFormAdmin(new DangNhap(), sender);
+            }
+        }
+
+        private void Admin_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

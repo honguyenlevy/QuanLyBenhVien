@@ -97,7 +97,7 @@
             this.btnXoaRole_User.Name = "btnXoaRole_User";
             this.btnXoaRole_User.Size = new System.Drawing.Size(135, 62);
             this.btnXoaRole_User.TabIndex = 0;
-            this.btnXoaRole_User.Text = "Xóa";
+            this.btnXoaRole_User.Text = "DROP";
             this.btnXoaRole_User.UseVisualStyleBackColor = false;
             this.btnXoaRole_User.Click += new System.EventHandler(this.btnXoa_Click);
             // 

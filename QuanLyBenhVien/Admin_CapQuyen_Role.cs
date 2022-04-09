@@ -190,7 +190,7 @@ namespace QuanLyBenhVien
 
             if (select == "" && insert == "" && update == "" && delete == "")
             {
-                MessageBox.Show("Chưa chọn quyền nào để grant");
+                MessageBox.Show("YOU HAVE NOT SELECTED PRIVELEGE !");
             }
 
             OracleCommand cmd = new OracleCommand();
@@ -205,7 +205,7 @@ namespace QuanLyBenhVien
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Grant Select thành công!");
+                    MessageBox.Show("GRANT SELECT SUCCESSFULLY!");
 
                 }
                 catch (Exception ex)
@@ -222,7 +222,7 @@ namespace QuanLyBenhVien
                 {
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Grant Insert thành công!");
+                    MessageBox.Show("GRANT INSERT SUCCESFULLY !");
 
                 }
                 catch (Exception ex)
@@ -240,7 +240,7 @@ namespace QuanLyBenhVien
                 {
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Grant Update thành công!");
+                    MessageBox.Show("GRANT UPDATE SUCCESFULLY");
 
                 }
                 catch (Exception ex)
@@ -257,7 +257,7 @@ namespace QuanLyBenhVien
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Grant Delete thành công!");
+                    MessageBox.Show("GRANT DELETE SUCCESFULLY");
 
                 }
                 catch (Exception ex)

@@ -95,7 +95,7 @@ namespace QuanLyBenhVien
         {
             if (textPriv.Text == " ")
             {
-                MessageBox.Show("Chọn quyền muốn revoke trước ");
+                MessageBox.Show("CHOOSE PRIVELEGE FIRST ");
             }
 
 
@@ -106,11 +106,10 @@ namespace QuanLyBenhVien
             Revoke += textPriv.Text + " on QTV." + textBoxObject.Text + " from  " + comboBoxRole.SelectedValue;
 
 
-            cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
-            cmd.CommandType = CommandType.Text;
+            
             cmd.Connection = conn;
            
-            cmd.ExecuteNonQuery();
+            
 
 
             cmd.CommandText = Revoke;
@@ -118,7 +117,7 @@ namespace QuanLyBenhVien
             {
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Revoke thành công!");
+                MessageBox.Show("REVOKE SUCCESSFULLY!");
                 textPriv.Text = "";
                 textBoxObject.Text = "";
                 cmd.CommandText = "select grantee,table_name,privilege,grantable,type from dba_tab_privs  where grantee = '" + comboBoxRole.SelectedValue + "' or grantee in (select granted_role from dba_role_privs connect by prior granted_role = grantee start with grantee = '" + comboBoxRole.SelectedValue + "')";

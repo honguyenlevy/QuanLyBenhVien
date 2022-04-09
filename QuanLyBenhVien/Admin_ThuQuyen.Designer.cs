@@ -45,7 +45,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1042, 94);
             this.panel1.TabIndex = 2;
@@ -54,11 +54,11 @@
             // 
             this.btnRoleUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRoleUser.Location = new System.Drawing.Point(680, 0);
-            this.btnRoleUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRoleUser.Margin = new System.Windows.Forms.Padding(6);
             this.btnRoleUser.Name = "btnRoleUser";
             this.btnRoleUser.Size = new System.Drawing.Size(344, 94);
             this.btnRoleUser.TabIndex = 2;
-            this.btnRoleUser.Text = "Thu Role từ User";
+            this.btnRoleUser.Text = "REVOKE ROLE FROM USER";
             this.btnRoleUser.UseVisualStyleBackColor = true;
             this.btnRoleUser.Click += new System.EventHandler(this.btnRoleUser_Click);
             // 
@@ -66,11 +66,11 @@
             // 
             this.btnRole.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRole.Location = new System.Drawing.Point(342, 0);
-            this.btnRole.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRole.Margin = new System.Windows.Forms.Padding(6);
             this.btnRole.Name = "btnRole";
             this.btnRole.Size = new System.Drawing.Size(344, 94);
             this.btnRole.TabIndex = 1;
-            this.btnRole.Text = "Thu quyền Role";
+            this.btnRole.Text = "REVOKE PRIVELEGE FROM ROLE";
             this.btnRole.UseVisualStyleBackColor = true;
             this.btnRole.Click += new System.EventHandler(this.btnRole_Click);
             // 
@@ -78,11 +78,11 @@
             // 
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUser.Location = new System.Drawing.Point(0, 0);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(6);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(344, 94);
             this.btnUser.TabIndex = 0;
-            this.btnUser.Text = "Thu quyền User";
+            this.btnUser.Text = "REVOKE PRIVELEGE FROM USER";
             this.btnUser.UseVisualStyleBackColor = true;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
@@ -92,7 +92,7 @@
             this.panelThuQuyen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThuQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelThuQuyen.Location = new System.Drawing.Point(0, 94);
-            this.panelThuQuyen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelThuQuyen.Margin = new System.Windows.Forms.Padding(6);
             this.panelThuQuyen.Name = "panelThuQuyen";
             this.panelThuQuyen.Size = new System.Drawing.Size(1042, 764);
             this.panelThuQuyen.TabIndex = 3;
@@ -105,7 +105,7 @@
             this.Controls.Add(this.panelThuQuyen);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Admin_ThuQuyen";
             this.Text = "Admin_ThuQuyen";
             this.Load += new System.EventHandler(this.Admin_ThuQuyen_Load);

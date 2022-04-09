@@ -87,7 +87,7 @@ namespace QuanLyBenhVien
         {
             if (textBoxRole.Text == " ")
             {
-                MessageBox.Show("Chọn quyền muốn revoke trước ");
+                MessageBox.Show("CHOOSE PRIVELEGE FIRST !");
             }
 
 
@@ -110,8 +110,14 @@ namespace QuanLyBenhVien
             {
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Revoke thành công!");
+                MessageBox.Show("REVOKE SUCCESFULLY!");
                 textBoxRole.Text = "";
+                cmd.CommandText = "select granted_role  from dba_role_privs connect by prior granted_role = grantee start with grantee = '" + comboBoxUser.SelectedValue + "'";
+                cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridRole.DataSource = dt;
 
             }
             catch (Exception ex)

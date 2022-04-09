@@ -39,22 +39,6 @@ namespace QuanLyBenhVien
             childForm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void comboBoxUser_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -193,24 +177,50 @@ namespace QuanLyBenhVien
             //}
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
+        //private void btnUser_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //    btnUser.BackColor = Color.FromArgb(107, 155, 55);
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            OpenFormAdmin(new Admin_CapQuyen_User(), sender);
-        }
+        //    btnRole.BackColor = Color.FromArgb(179, 229, 252);
+
+        //    btnRoleUser.BackColor = Color.FromArgb(179, 229, 252);
+
+        //    OpenFormAdmin(new Admin_CapQuyen_User(), sender);
+        //}
 
         private void btnRole_Click(object sender, EventArgs e)
         {
+            btnUser1.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRole.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnRoleUser.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_CapQuyen_Role(), sender);
         }
 
         private void btnRoleUser_Click(object sender, EventArgs e)
         {
+            btnUser1.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRoleUser.BackColor = Color.FromArgb(107, 155, 55);
+
             OpenFormAdmin(new Admin_CapQuyen_RoleUser(), sender);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            btnUser1.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRoleUser.BackColor = Color.FromArgb(179, 229, 252);
+
+            OpenFormAdmin(new Admin_CapQuyen_User(), sender);
+
         }
     } 
     

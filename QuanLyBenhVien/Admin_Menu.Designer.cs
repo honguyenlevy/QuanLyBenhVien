@@ -64,7 +64,7 @@
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(344, 94);
             this.btnDangXuat.TabIndex = 5;
-            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Text = "LOG OUT";
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
@@ -76,7 +76,7 @@
             this.btnThuQuyen.Name = "btnThuQuyen";
             this.btnThuQuyen.Size = new System.Drawing.Size(344, 94);
             this.btnThuQuyen.TabIndex = 4;
-            this.btnThuQuyen.Text = "Thu quyền";
+            this.btnThuQuyen.Text = "REVOKE PRIVELEGE";
             this.btnThuQuyen.UseVisualStyleBackColor = true;
             this.btnThuQuyen.Click += new System.EventHandler(this.btnThuQuyen_Click);
             // 
@@ -88,7 +88,7 @@
             this.btnCapQuyen.Name = "btnCapQuyen";
             this.btnCapQuyen.Size = new System.Drawing.Size(344, 94);
             this.btnCapQuyen.TabIndex = 3;
-            this.btnCapQuyen.Text = "Cấp quyền";
+            this.btnCapQuyen.Text = "GRANT PRIVELEGE";
             this.btnCapQuyen.UseVisualStyleBackColor = true;
             this.btnCapQuyen.Click += new System.EventHandler(this.btnCapQuyen_Click);
             // 
@@ -100,7 +100,7 @@
             this.btnTaoUserRole.Name = "btnTaoUserRole";
             this.btnTaoUserRole.Size = new System.Drawing.Size(344, 94);
             this.btnTaoUserRole.TabIndex = 2;
-            this.btnTaoUserRole.Text = "Tạo User/Role";
+            this.btnTaoUserRole.Text = "CREATE USER/ROLE";
             this.btnTaoUserRole.UseVisualStyleBackColor = true;
             this.btnTaoUserRole.Click += new System.EventHandler(this.btnTaoUserRole_Click);
             // 
@@ -114,7 +114,7 @@
             this.btnDanhSach.Name = "btnDanhSach";
             this.btnDanhSach.Size = new System.Drawing.Size(344, 94);
             this.btnDanhSach.TabIndex = 0;
-            this.btnDanhSach.Text = "Danh sách";
+            this.btnDanhSach.Text = "LIST USERS";
             this.btnDanhSach.UseVisualStyleBackColor = true;
             this.btnDanhSach.Click += new System.EventHandler(this.btnDanhSach_Click);
             // 
@@ -126,7 +126,7 @@
             this.btnThongTinQuyen.Name = "btnThongTinQuyen";
             this.btnThongTinQuyen.Size = new System.Drawing.Size(344, 94);
             this.btnThongTinQuyen.TabIndex = 1;
-            this.btnThongTinQuyen.Text = "Thông tin quyền";
+            this.btnThongTinQuyen.Text = "VIEW PRIVELEGE";
             this.btnThongTinQuyen.UseVisualStyleBackColor = true;
             this.btnThongTinQuyen.Click += new System.EventHandler(this.btnThongTinQuyen_Click);
             // 
@@ -152,6 +152,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Admin_Menu";
             this.Text = "Admin_Menu";
+            this.Load += new System.EventHandler(this.Admin_Menu_Load);
             this.panelMenuAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
 

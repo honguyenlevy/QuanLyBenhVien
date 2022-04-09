@@ -58,7 +58,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(345, 94);
             this.btnSua.TabIndex = 1;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "ALTER USER/ROLE";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -70,7 +70,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(345, 94);
             this.btnXoa.TabIndex = 1;
-            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Text = "DELETE USER/ROLE";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -82,7 +82,7 @@
             this.btnTao.Name = "btnTao";
             this.btnTao.Size = new System.Drawing.Size(345, 94);
             this.btnTao.TabIndex = 1;
-            this.btnTao.Text = "Tạo";
+            this.btnTao.Text = "CREATE USER/ROLE";
             this.btnTao.UseVisualStyleBackColor = true;
             this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 

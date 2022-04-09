@@ -35,16 +35,33 @@ namespace QuanLyBenhVien
         }
         private void btnUser_Click(object sender, EventArgs e)
         {
+            btnUser.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRoleUser.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_ThuQuyen_User(), sender);
         }
 
         private void btnRole_Click(object sender, EventArgs e)
         {
+            btnUser.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRole.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnRoleUser.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_ThuQuyen_Role(), sender);
         }
 
         private void btnRoleUser_Click(object sender, EventArgs e)
         {
+            btnUser.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnRoleUser.BackColor = Color.FromArgb(107, 155, 55);
             OpenFormAdmin(new Admin_ThuQuyen_RoleUser(), sender);
         }
 

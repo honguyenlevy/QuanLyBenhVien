@@ -45,7 +45,7 @@
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(248, 62);
             this.btn_DangNhap.TabIndex = 9;
-            this.btn_DangNhap.Text = "Đăng nhập";
+            this.btn_DangNhap.Text = "LOG IN";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
             this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 

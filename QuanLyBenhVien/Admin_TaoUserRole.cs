@@ -36,16 +36,34 @@ namespace QuanLyBenhVien
 
         private void btnTao_Click(object sender, EventArgs e)
         {
+            btnTao.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnXoa.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnSua.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_TaoUserRole_Tao(), sender);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            btnTao.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnXoa.BackColor = Color.FromArgb(107, 155, 55);
+
+            btnSua.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_TaoUserRole_Xoa(), sender);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            btnTao.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnXoa.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnSua.BackColor = Color.FromArgb(107, 155, 55);
+
             OpenFormAdmin(new Admin_TaoUserRole_Sua(), sender);
         }
 

@@ -124,7 +124,7 @@
             this.btn_Tao.Name = "btn_Tao";
             this.btn_Tao.Size = new System.Drawing.Size(276, 62);
             this.btn_Tao.TabIndex = 7;
-            this.btn_Tao.Text = "Tạo ";
+            this.btn_Tao.Text = "CREATE";
             this.btn_Tao.UseVisualStyleBackColor = false;
             this.btn_Tao.Click += new System.EventHandler(this.btn_Tao_Click);
             // 

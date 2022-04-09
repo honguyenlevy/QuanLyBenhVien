@@ -43,7 +43,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1442, 188);
+            this.panel1.Size = new System.Drawing.Size(1442, 154);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -54,19 +54,20 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1442, 188);
+            this.label1.Size = new System.Drawing.Size(1442, 154);
             this.label1.TabIndex = 0;
-            this.label1.Text = "QUẢN LÍ BỆNH VIỆN";
+            this.label1.Text = "HOSPITAL MANAGEMENT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 188);
+            this.panelDesktop.Location = new System.Drawing.Point(0, 154);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1442, 867);
+            this.panelDesktop.Size = new System.Drawing.Size(1442, 901);
             this.panelDesktop.TabIndex = 3;
             // 
             // Main

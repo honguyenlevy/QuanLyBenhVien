@@ -65,26 +65,26 @@ namespace QuanLyBenhVien
         private void btnApply_Click(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show("Your user password will change", "Do you want to save ?", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("YOUR USER'S PASSWORD WILL BE MODIFIED", "DO YOU WANT TO SAVE ?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 
                 OracleCommand cmd = new OracleCommand();
                 if (textUsername.Text.Trim().Length < 2)
                 {
-                    MessageBox.Show("Tên Role/User không ít hơn 2 kí tự!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("ROLE/USER MUST HAVE MORE THAN 1 CHARACTERS!", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.ActiveControl = textUsername;
                 }
 
                 if (textPassword.Text.Trim().Length < 4)
                 {
-                    MessageBox.Show("Password không ít hơn  4 kí tự!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Password MUST HAVE MORE THAN 3 CHARACTERS", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.ActiveControl = textPassword;
                 }
 
                 if (textPassword.Text != textConfirmPassword.Text)
                 {
-                    MessageBox.Show("Xác nhận mật khẩu chưa đúng !", "Input error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("COMFIRMATION PASSWORD FAIL !", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.ActiveControl = textConfirmPassword;
                 }
 
@@ -102,7 +102,7 @@ namespace QuanLyBenhVien
                 {
                    
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thay đổi thành công!");
+                    MessageBox.Show("ALTER SUCCESSFULLY");
 
                 }
                 catch (Exception ex)

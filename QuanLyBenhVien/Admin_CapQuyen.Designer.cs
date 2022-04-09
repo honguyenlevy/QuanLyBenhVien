@@ -28,51 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button btnUser;
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUser1 = new System.Windows.Forms.Button();
             this.btnRoleUser = new System.Windows.Forms.Button();
             this.btnRole = new System.Windows.Forms.Button();
             this.panelCapQuyen = new System.Windows.Forms.Panel();
-            btnUser = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnUser
-            // 
-            btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            btnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnUser.Location = new System.Drawing.Point(0, 0);
-            btnUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            btnUser.Name = "btnUser";
-            btnUser.Size = new System.Drawing.Size(345, 94);
-            btnUser.TabIndex = 0;
-            btnUser.Text = "Cấp quyền User";
-            btnUser.UseVisualStyleBackColor = true;
-            btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
-            this.panel1.Controls.Add(btnUser);
+            this.panel1.Controls.Add(this.btnUser1);
             this.panel1.Controls.Add(this.btnRoleUser);
             this.panel1.Controls.Add(this.btnRole);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1042, 94);
             this.panel1.TabIndex = 1;
+            // 
+            // btnUser1
+            // 
+            this.btnUser1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUser1.Location = new System.Drawing.Point(0, 0);
+            this.btnUser1.Name = "btnUser1";
+            this.btnUser1.Size = new System.Drawing.Size(345, 94);
+            this.btnUser1.TabIndex = 0;
+            this.btnUser1.Text = "GRANT PRIVELEGE TO USER";
+            this.btnUser1.UseVisualStyleBackColor = true;
+            this.btnUser1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnRoleUser
             // 
             this.btnRoleUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRoleUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoleUser.Location = new System.Drawing.Point(678, 0);
-            this.btnRoleUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRoleUser.Margin = new System.Windows.Forms.Padding(6);
             this.btnRoleUser.Name = "btnRoleUser";
             this.btnRoleUser.Size = new System.Drawing.Size(345, 94);
             this.btnRoleUser.TabIndex = 2;
-            this.btnRoleUser.Text = "Cấp Role cho User";
+            this.btnRoleUser.Text = "GRANT ROLE TO USER";
             this.btnRoleUser.UseVisualStyleBackColor = true;
             this.btnRoleUser.Click += new System.EventHandler(this.btnRoleUser_Click);
             // 
@@ -81,11 +78,11 @@
             this.btnRole.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRole.Location = new System.Drawing.Point(339, 0);
-            this.btnRole.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRole.Margin = new System.Windows.Forms.Padding(6);
             this.btnRole.Name = "btnRole";
             this.btnRole.Size = new System.Drawing.Size(345, 94);
             this.btnRole.TabIndex = 1;
-            this.btnRole.Text = "Cấp quyền Role";
+            this.btnRole.Text = "GRANT PRIVELEGE TO ROLE";
             this.btnRole.UseVisualStyleBackColor = true;
             this.btnRole.Click += new System.EventHandler(this.btnRole_Click);
             // 
@@ -94,7 +91,7 @@
             this.panelCapQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panelCapQuyen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCapQuyen.Location = new System.Drawing.Point(0, 94);
-            this.panelCapQuyen.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelCapQuyen.Margin = new System.Windows.Forms.Padding(6);
             this.panelCapQuyen.Name = "panelCapQuyen";
             this.panelCapQuyen.Size = new System.Drawing.Size(1042, 764);
             this.panelCapQuyen.TabIndex = 2;
@@ -121,5 +118,6 @@
         private System.Windows.Forms.Button btnRoleUser;
         private System.Windows.Forms.Button btnRole;
         private System.Windows.Forms.Panel panelCapQuyen;
+        private System.Windows.Forms.Button btnUser1;
     }
 }

@@ -131,7 +131,7 @@ namespace QuanLyBenhVien
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("User/Role will be removed from Database", "Do you want to drop  ?", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("User/Role WILL BE REMOVED", "DO YOU WANT TO DROP ?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 string dropUserRole = "drop ";
@@ -161,9 +161,9 @@ namespace QuanLyBenhVien
 
                     cmd.ExecuteNonQuery();
                     if (checkBoxRole.CheckState == CheckState.Unchecked)
-                        MessageBox.Show("Xóa User thành công!");
+                        MessageBox.Show("DROP USER SUCCESFULLY!");
                     else
-                        MessageBox.Show("Xóa Role thành công!");
+                        MessageBox.Show("DROP ROLE SUCCESFULLY!");
 
 
                 }

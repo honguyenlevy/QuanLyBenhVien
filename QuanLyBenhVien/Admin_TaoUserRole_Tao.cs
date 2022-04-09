@@ -36,7 +36,7 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
             if (textUsername.Text.Trim().Length < 2)
             {
-                MessageBox.Show("Tên Role/User không ít hơn 2 kí tự!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("USER/ROLE MUST HAVE MORE THAN 1 CHARACTERS", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.ActiveControl = textUsername;
                 check = false;
 
@@ -44,7 +44,7 @@ namespace QuanLyBenhVien
 
             if (textPassword.Text.Trim().Length < 4)
             {
-                MessageBox.Show("Password không ít hơn  4 kí tự!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("PASSWORD MUST HAVE MORE THAN 3 CHARACTERS", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.ActiveControl = textPassword;
                 check = false;
 
@@ -52,7 +52,7 @@ namespace QuanLyBenhVien
 
             if (textPassword.Text != textConfirmPassword.Text)
             {
-                MessageBox.Show("Xác nhận mật khẩu chưa đúng !", "Input error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("CONFIRMATION PASSWORD IS FAILED !", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.ActiveControl = textConfirmPassword;
                 check = false;
 
@@ -80,7 +80,7 @@ namespace QuanLyBenhVien
                         try
                         {
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Tạo User thành công!");
+                            MessageBox.Show("CREATE USER SUCCESSFULLY!");
 
                         }
                         catch (Exception ex)
@@ -104,7 +104,7 @@ namespace QuanLyBenhVien
                         {
 
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Tạo Role thành công!");
+                            MessageBox.Show("CREATE ROLE SUCCESFULLY");
 
                         }
                         catch (Exception ex)
