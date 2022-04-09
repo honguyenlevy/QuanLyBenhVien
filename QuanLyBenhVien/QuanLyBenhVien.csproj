@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD89CD73-9043-4925-9181-47F10AC6288D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyBenhVien</RootNamespace>
+    <AssemblyName>QuanLyBenhVien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_CapQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CapQuyen.Designer.cs">
+      <DependentUpon>Admin_CapQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_Role.Designer.cs">
+      <DependentUpon>Admin_CapQuyen_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_RoleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_RoleUser.Designer.cs">
+      <DependentUpon>Admin_CapQuyen_RoleUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CapQuyen_User.Designer.cs">
+      <DependentUpon>Admin_CapQuyen_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DanhSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DanhSach.Designer.cs">
+      <DependentUpon>Admin_DanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Menu.Designer.cs">
+      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole.Designer.cs">
+      <DependentUpon>Admin_TaoUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Sua.Designer.cs">
+      <DependentUpon>Admin_TaoUserRole_Sua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Tao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Tao.Designer.cs">
+      <DependentUpon>Admin_TaoUserRole_Tao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Xoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_TaoUserRole_Xoa.Designer.cs">
+      <DependentUpon>Admin_TaoUserRole_Xoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ThongTinQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ThongTinQuyen.Designer.cs">
+      <DependentUpon>Admin_ThongTinQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen.Designer.cs">
+      <DependentUpon>Admin_ThuQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_Role.Designer.cs">
+      <DependentUpon>Admin_ThuQuyen_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_User.Designer.cs">
+      <DependentUpon>Admin_ThuQuyen_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_RoleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ThuQuyen_RoleUser.Designer.cs">
+      <DependentUpon>Admin_ThuQuyen_RoleUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectData.cs" />
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin_CapQuyen.resx">
+      <DependentUpon>Admin_CapQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CapQuyen_Role.resx">
+      <DependentUpon>Admin_CapQuyen_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CapQuyen_RoleUser.resx">
+      <DependentUpon>Admin_CapQuyen_RoleUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CapQuyen_User.resx">
+      <DependentUpon>Admin_CapQuyen_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DanhSach.resx">
+      <DependentUpon>Admin_DanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Menu.resx">
+      <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_TaoUserRole.resx">
+      <DependentUpon>Admin_TaoUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_TaoUserRole_Sua.resx">
+      <DependentUpon>Admin_TaoUserRole_Sua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_TaoUserRole_Tao.resx">
+      <DependentUpon>Admin_TaoUserRole_Tao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_TaoUserRole_Xoa.resx">
+      <DependentUpon>Admin_TaoUserRole_Xoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ThongTinQuyen.resx">
+      <DependentUpon>Admin_ThongTinQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ThuQuyen.resx">
+      <DependentUpon>Admin_ThuQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ThuQuyen_Role.resx">
+      <DependentUpon>Admin_ThuQuyen_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ThuQuyen_RoleUser.resx">
+      <DependentUpon>Admin_ThuQuyen_RoleUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ThuQuyen_User.resx">
+      <DependentUpon>Admin_ThuQuyen_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
