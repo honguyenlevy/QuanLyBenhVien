@@ -158,3 +158,45 @@ C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVie
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.CopyComplete
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.pdb
+D:\Git\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe.config
+D:\Git\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.exe
+D:\Git\QuanLyBenhVien\bin\Debug\QuanLyBenhVien.pdb
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.AssemblyReference.cache
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_Role.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_RoleUser.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_CapQuyen_User.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_DanhSach.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_Menu.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoBenhNhan.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoCSYT.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoNhanVien.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Sua.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Tao.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_TaoUserRole_Xoa.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThongTinQuyen.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_Role.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_RoleUser.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_ThuQuyen_User.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.BacSi.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.BacSi_XemThongTinBenhNhan.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.BenhNhan_XemThongTinCaNhan.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.CoSoYTe.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.CSYT_DanhSachHSBA.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.CSYT_DanhSachHSBA_DV.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.CSYT_ThemHSBA.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.DangNhap.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Main.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.NghienCuu.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.NhanVien_XemThongTinCaNhan.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Properties.Resources.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.ThanhTra.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.GenerateResource.cache
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.csproj.CoreCompileInputs.cache
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.exe
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.pdb
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.CSYT_ThemHSBA_DV.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.NghienCuu_XemDanhSach.resources
+D:\Git\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.ThanhTra_XemThongTin.resources

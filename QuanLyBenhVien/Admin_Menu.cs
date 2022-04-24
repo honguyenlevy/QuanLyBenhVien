@@ -33,6 +33,7 @@ namespace QuanLyBenhVien
             childForm.BringToFront();
             childForm.Show();
         }
+
         private void btnDanhSach_Click(object sender, EventArgs e)
         {
            
@@ -45,6 +46,12 @@ namespace QuanLyBenhVien
             btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
             btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
 
             OpenFormAdmin(new Admin_DanhSach(), sender);
         }
@@ -61,6 +68,12 @@ namespace QuanLyBenhVien
 
             btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
 
             OpenFormAdmin(new Admin_ThongTinQuyen(), sender);
         }
@@ -76,6 +89,12 @@ namespace QuanLyBenhVien
             btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
             btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
 
 
             OpenFormAdmin(new Admin_TaoUserRole(), sender);
@@ -95,6 +114,12 @@ namespace QuanLyBenhVien
 
             btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new Admin_CapQuyen(), sender);
         }
 
@@ -110,6 +135,12 @@ namespace QuanLyBenhVien
             btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
             btnThuQuyen.BackColor = Color.FromArgb(107, 155, 55);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
 
             OpenFormAdmin(new Admin_ThuQuyen(), sender);
         }
@@ -128,6 +159,12 @@ namespace QuanLyBenhVien
 
             btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
 
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
             DialogResult dialogResult = MessageBox.Show("Choose yes to log out", "Do you want to log out  ?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -139,6 +176,75 @@ namespace QuanLyBenhVien
         private void Admin_Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonTaoBN_Click(object sender, EventArgs e)
+        {
+            btnDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(107, 155, 55);
+
+            OpenFormAdmin(new Admin_TaoBenhNhan(), sender);
+        }
+
+        private void buttonTaoCSYT_Click(object sender, EventArgs e)
+        {
+            btnDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(107, 155, 55);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
+            OpenFormAdmin(new Admin_TaoCSYT(), sender);
+        }
+
+        private void buttonTaoNV_Click(object sender, EventArgs e)
+        {
+            btnDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(107, 155, 55);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
+            OpenFormAdmin(new Admin_TaoNhanVien(), sender);
         }
     }
 }
