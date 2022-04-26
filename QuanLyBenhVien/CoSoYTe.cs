@@ -83,7 +83,7 @@ namespace QuanLyBenhVien
 
             buttonDSHSBADV.BackColor = Color.FromArgb(107, 155, 55);
 
-            OpenFormAdmin(new CSYT_ThemHSBA_DV(), sender);
+            OpenFormAdmin(new CSYT_DanhSachHSBA(), sender);
         }
 
         private void buttonDangXuat_Click(object sender, EventArgs e)
