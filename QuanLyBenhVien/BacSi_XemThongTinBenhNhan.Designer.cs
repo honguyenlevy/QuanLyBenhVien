@@ -572,6 +572,7 @@ namespace QuanLyBenhVien
             this.buttonEnter.TabIndex = 36;
             this.buttonEnter.Text = "Enter";
             this.buttonEnter.UseVisualStyleBackColor = false;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // textBoxMaBenhNhan
             // 
@@ -604,6 +605,7 @@ namespace QuanLyBenhVien
             this.dataGridViewDAHSBA.RowTemplate.Height = 24;
             this.dataGridViewDAHSBA.Size = new System.Drawing.Size(1074, 99);
             this.dataGridViewDAHSBA.TabIndex = 3;
+            this.dataGridViewDAHSBA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDAHSBA_CellContentClick);
             // 
             // label20
             // 

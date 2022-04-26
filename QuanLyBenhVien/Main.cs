@@ -38,7 +38,7 @@ namespace QuanLyBenhVien
         {
             //
             WindowState = FormWindowState.Maximized;
-            OpenChilForm(new BacSi(), sender);
+            OpenChilForm(new DangNhap(), sender);
         }
 
         private void label1_Click(object sender, EventArgs e)

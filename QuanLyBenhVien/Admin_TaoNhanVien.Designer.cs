@@ -43,8 +43,8 @@ namespace QuanLyBenhVien
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBoxCMND = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxQueQuan = new System.Windows.Forms.TextBox();
+            this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxCSYT = new System.Windows.Forms.ComboBox();
@@ -83,8 +83,8 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1.Controls.Add(this.label6, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxCMND, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxQueQuan, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSDT, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label8, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxCSYT, 2, 4);
@@ -191,6 +191,7 @@ namespace QuanLyBenhVien
             this.radioButtonNu.TabStop = true;
             this.radioButtonNu.Text = "Nữ";
             this.radioButtonNu.UseVisualStyleBackColor = true;
+            this.radioButtonNu.CheckedChanged += new System.EventHandler(this.radioButtonNu_CheckedChanged);
             // 
             // radioButtonNam
             // 
@@ -258,21 +259,21 @@ namespace QuanLyBenhVien
             this.textBoxCMND.Size = new System.Drawing.Size(352, 30);
             this.textBoxCMND.TabIndex = 10;
             // 
-            // textBox1
+            // textBoxQueQuan
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(211, 202);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(352, 30);
-            this.textBox1.TabIndex = 11;
+            this.textBoxQueQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxQueQuan.Location = new System.Drawing.Point(211, 202);
+            this.textBoxQueQuan.Name = "textBoxQueQuan";
+            this.textBoxQueQuan.Size = new System.Drawing.Size(352, 30);
+            this.textBoxQueQuan.TabIndex = 11;
             // 
-            // textBox2
+            // textBoxSDT
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(777, 202);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(352, 30);
-            this.textBox2.TabIndex = 12;
+            this.textBoxSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSDT.Location = new System.Drawing.Point(777, 202);
+            this.textBoxSDT.Name = "textBoxSDT";
+            this.textBoxSDT.Size = new System.Drawing.Size(352, 30);
+            this.textBoxSDT.TabIndex = 12;
             // 
             // label7
             // 
@@ -302,7 +303,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxCSYT.FormattingEnabled = true;
-            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 262);
+            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 266);
             this.comboBoxCSYT.Name = "comboBoxCSYT";
             this.comboBoxCSYT.Size = new System.Drawing.Size(352, 33);
             this.comboBoxCSYT.TabIndex = 15;
@@ -311,7 +312,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxVaiTro.FormattingEnabled = true;
-            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 262);
+            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 266);
             this.comboBoxVaiTro.Name = "comboBoxVaiTro";
             this.comboBoxVaiTro.Size = new System.Drawing.Size(352, 33);
             this.comboBoxVaiTro.TabIndex = 16;
@@ -357,7 +358,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxChuyenKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChuyenKhoa.FormattingEnabled = true;
-            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 340);
+            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 344);
             this.comboBoxChuyenKhoa.Name = "comboBoxChuyenKhoa";
             this.comboBoxChuyenKhoa.Size = new System.Drawing.Size(352, 33);
             this.comboBoxChuyenKhoa.TabIndex = 21;
@@ -372,6 +373,7 @@ namespace QuanLyBenhVien
             this.buttonTao.TabIndex = 22;
             this.buttonTao.Text = "Create";
             this.buttonTao.UseVisualStyleBackColor = false;
+            this.buttonTao.Click += new System.EventHandler(this.buttonTao_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -413,6 +415,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin_TaoNhanVien";
             this.Text = "Admin_TaoNhanVien";
+            this.Load += new System.EventHandler(this.Admin_TaoNhanVien_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -439,8 +442,8 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBoxCMND;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxQueQuan;
+        private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxCSYT;

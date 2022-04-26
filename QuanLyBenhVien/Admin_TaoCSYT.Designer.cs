@@ -163,6 +163,7 @@ namespace QuanLyBenhVien
             this.buttonTao.TabIndex = 32;
             this.buttonTao.Text = "Create";
             this.buttonTao.UseVisualStyleBackColor = false;
+            this.buttonTao.Click += new System.EventHandler(this.buttonTao_Click);
             // 
             // Admin_TaoCSYT
             // 

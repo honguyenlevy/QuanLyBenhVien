@@ -72,6 +72,7 @@ namespace QuanLyBenhVien
             this.dataGridViewList.RowTemplate.Height = 24;
             this.dataGridViewList.Size = new System.Drawing.Size(1074, 521);
             this.dataGridViewList.TabIndex = 0;
+            this.dataGridViewList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewList_CellContentClick);
             // 
             // tableLayoutPanel2
             // 
@@ -100,6 +101,7 @@ namespace QuanLyBenhVien
             this.radioButtonHSBADV.TabStop = true;
             this.radioButtonHSBADV.Text = "Hồ sơ bệnh án dịch vụ";
             this.radioButtonHSBADV.UseVisualStyleBackColor = true;
+            this.radioButtonHSBADV.CheckedChanged += new System.EventHandler(this.radioButtonHSBADV_CheckedChanged);
             // 
             // radioButtonHSBA
             // 
@@ -113,6 +115,7 @@ namespace QuanLyBenhVien
             this.radioButtonHSBA.TabStop = true;
             this.radioButtonHSBA.Text = "Hồ sơ bệnh án";
             this.radioButtonHSBA.UseVisualStyleBackColor = true;
+            this.radioButtonHSBA.CheckedChanged += new System.EventHandler(this.radioButtonHSBA_CheckedChanged);
             // 
             // label1
             // 
@@ -128,8 +131,9 @@ namespace QuanLyBenhVien
             this.label1.TabIndex = 2;
             this.label1.Text = "Danh sách hồ sơ bệnh án";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // NghienCuu
+            // NghienCuu_XemDanhSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,8 +141,9 @@ namespace QuanLyBenhVien
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "NghienCuu";
+            this.Name = "NghienCuu_XemDanhSach";
             this.Text = "NghienCuu";
+            this.Load += new System.EventHandler(this.NghienCuu_XemDanhSach_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewList)).EndInit();

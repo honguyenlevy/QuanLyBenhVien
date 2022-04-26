@@ -43,8 +43,8 @@ namespace QuanLyBenhVien
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBoxCMND = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxQueQuan = new System.Windows.Forms.TextBox();
+            this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxCSYT = new System.Windows.Forms.ComboBox();
@@ -54,8 +54,10 @@ namespace QuanLyBenhVien
             this.label11 = new System.Windows.Forms.Label();
             this.comboBoxChuyenKhoa = new System.Windows.Forms.ComboBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.dataGridViewTTCaNhan = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTTCaNhan)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -80,8 +82,8 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1.Controls.Add(this.label6, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxCMND, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxQueQuan, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSDT, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label8, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxCSYT, 2, 4);
@@ -91,6 +93,7 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1.Controls.Add(this.label11, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxChuyenKhoa, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.buttonUpdate, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridViewTTCaNhan, 2, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -255,21 +258,21 @@ namespace QuanLyBenhVien
             this.textBoxCMND.Size = new System.Drawing.Size(354, 30);
             this.textBoxCMND.TabIndex = 10;
             // 
-            // textBox1
+            // textBoxQueQuan
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(213, 230);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(354, 30);
-            this.textBox1.TabIndex = 11;
+            this.textBoxQueQuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxQueQuan.Location = new System.Drawing.Point(213, 230);
+            this.textBoxQueQuan.Name = "textBoxQueQuan";
+            this.textBoxQueQuan.Size = new System.Drawing.Size(354, 30);
+            this.textBoxQueQuan.TabIndex = 11;
             // 
-            // textBox2
+            // textBoxSDT
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(783, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(354, 30);
-            this.textBox2.TabIndex = 12;
+            this.textBoxSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSDT.Location = new System.Drawing.Point(783, 230);
+            this.textBoxSDT.Name = "textBoxSDT";
+            this.textBoxSDT.Size = new System.Drawing.Size(354, 30);
+            this.textBoxSDT.TabIndex = 12;
             // 
             // label7
             // 
@@ -299,7 +302,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxCSYT.FormattingEnabled = true;
-            this.comboBoxCSYT.Location = new System.Drawing.Point(213, 303);
+            this.comboBoxCSYT.Location = new System.Drawing.Point(213, 302);
             this.comboBoxCSYT.Name = "comboBoxCSYT";
             this.comboBoxCSYT.Size = new System.Drawing.Size(354, 33);
             this.comboBoxCSYT.TabIndex = 15;
@@ -308,7 +311,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxVaiTro.FormattingEnabled = true;
-            this.comboBoxVaiTro.Location = new System.Drawing.Point(783, 303);
+            this.comboBoxVaiTro.Location = new System.Drawing.Point(783, 302);
             this.comboBoxVaiTro.Name = "comboBoxVaiTro";
             this.comboBoxVaiTro.Size = new System.Drawing.Size(354, 33);
             this.comboBoxVaiTro.TabIndex = 16;
@@ -354,7 +357,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxChuyenKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChuyenKhoa.FormattingEnabled = true;
-            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(783, 385);
+            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(783, 381);
             this.comboBoxChuyenKhoa.Name = "comboBoxChuyenKhoa";
             this.comboBoxChuyenKhoa.Size = new System.Drawing.Size(354, 33);
             this.comboBoxChuyenKhoa.TabIndex = 21;
@@ -370,6 +373,17 @@ namespace QuanLyBenhVien
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             // 
+            // dataGridViewTTCaNhan
+            // 
+            this.dataGridViewTTCaNhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTTCaNhan.Location = new System.Drawing.Point(213, 493);
+            this.dataGridViewTTCaNhan.Name = "dataGridViewTTCaNhan";
+            this.dataGridViewTTCaNhan.RowHeadersWidth = 51;
+            this.dataGridViewTTCaNhan.RowTemplate.Height = 24;
+            this.dataGridViewTTCaNhan.Size = new System.Drawing.Size(354, 64);
+            this.dataGridViewTTCaNhan.TabIndex = 23;
+            this.dataGridViewTTCaNhan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTTCaNhan_CellContentClick);
+            // 
             // NhanVien_XemThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -381,10 +395,12 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVien_XemThongTinCaNhan";
             this.Text = "NhanVien_XemThongTinCaNhan";
+            this.Load += new System.EventHandler(this.NhanVien_XemThongTinCaNhan_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTTCaNhan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,8 +421,8 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBoxCMND;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxQueQuan;
+        private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxCSYT;
@@ -416,5 +432,6 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBoxChuyenKhoa;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.DataGridView dataGridViewTTCaNhan;
     }
 }

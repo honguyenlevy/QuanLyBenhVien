@@ -271,5 +271,10 @@ namespace QuanLyBenhVien
         {
 
         }
+
+        private void comboBoxRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
  }

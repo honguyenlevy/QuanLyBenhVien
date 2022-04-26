@@ -187,11 +187,12 @@
             this.comboBoxRole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(214, 89);
+            this.comboBoxRole.Location = new System.Drawing.Point(214, 85);
             this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxRole.Name = "comboBoxRole";
             this.comboBoxRole.Size = new System.Drawing.Size(412, 33);
             this.comboBoxRole.TabIndex = 0;
+            this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxRole_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -211,7 +212,7 @@
             this.comboBoxTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTable.FormattingEnabled = true;
-            this.comboBoxTable.Location = new System.Drawing.Point(214, 157);
+            this.comboBoxTable.Location = new System.Drawing.Point(214, 153);
             this.comboBoxTable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxTable.Name = "comboBoxTable";
             this.comboBoxTable.Size = new System.Drawing.Size(412, 33);
@@ -236,7 +237,7 @@
             this.comboBoxColumn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxColumn.FormattingEnabled = true;
-            this.comboBoxColumn.Location = new System.Drawing.Point(214, 293);
+            this.comboBoxColumn.Location = new System.Drawing.Point(214, 289);
             this.comboBoxColumn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxColumn.Name = "comboBoxColumn";
             this.comboBoxColumn.Size = new System.Drawing.Size(412, 33);
