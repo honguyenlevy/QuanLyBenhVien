@@ -10,28 +10,23 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using System.Data.SqlClient;
 
-
-namespace QuanLyBenhVien
+namespace QuanLyBenhVien.Controller
 {
-    public partial class CSYT_DanhSachHSBA : Form
+    class LayRole
     {
         public static OracleConnection conn = DangNhap.OracleConnect();
-        public CSYT_DanhSachHSBA()
+         public static string LayThongTinRole(string username)
         {
-            InitializeComponent();
             if (conn.State != ConnectionState.Open)
             {
                 conn.Open();
             }
 
-        }
+            string role ="";
 
-        private void CSYT_DanhSachHSBA_Load(object sender, EventArgs e)
-        {
             OracleCommand cmd = new OracleCommand();
 
-            cmd.CommandText = "select * from HSBA";
-
+            cmd.CommandText = " select vaitro from qtv.nhanvien where lower(manv)  = lower('"+username +"') ";
 
             cmd.Connection = conn;
 
@@ -42,14 +37,15 @@ namespace QuanLyBenhVien
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
-
+                 role = dt.Rows[0][0].ToString();
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
+            return role;
         }
     }
 }

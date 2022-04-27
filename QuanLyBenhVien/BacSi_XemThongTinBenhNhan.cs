@@ -29,7 +29,7 @@ namespace QuanLyBenhVien
         {
             OracleCommand cmd = new OracleCommand();
             
-            //cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type from dba_users ";
+           
              cmd.CommandText = "select * from hsba where mabn = " + textBoxMaBenhNhan.Text;
             cmd.Connection = conn;
 
@@ -52,7 +52,81 @@ namespace QuanLyBenhVien
 
         private void dataGridViewDAHSBA_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            textBoxTenBN.Text = dataGridViewDAHSBA.CurrentRow.Cells[2].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[2].Value.ToString() : "";
+           
 
+
+            dateTimePicker1.Text = dataGridViewDAHSBA.CurrentRow.Cells[4].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[4].Value.ToString() : "";
+            textBoxCMND.Text = dataGridViewDAHSBA.CurrentRow.Cells[3].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[3].Value.ToString() : "";
+            textBoxTinhTP.Text = dataGridViewDAHSBA.CurrentRow.Cells[8].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[8].Value.ToString() : "";
+
+            textBoxQuanHuyen.Text = dataGridViewDAHSBA.CurrentRow.Cells[7].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[7].Value.ToString() : "";
+
+            textBoxTenDuong.Text = dataGridViewDAHSBA.CurrentRow.Cells[6].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[6].Value.ToString() : "";
+
+            textBoxSoNha.Text = dataGridViewDAHSBA.CurrentRow.Cells[5].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[5].Value.ToString() : "";
+
+
+            richTextBoxTSB.Text= dataGridViewDAHSBA.CurrentRow.Cells[8].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[8].Value.ToString() : "";
+
+            
+
+            richTextBoxTSBGD.Text= dataGridViewDAHSBA.CurrentRow.Cells[9].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[9].Value.ToString() : "";
+        }
+
+        private void BacSi_XemThongTinBenhNhan_Load(object sender, EventArgs e)
+        {
+            OracleCommand cmd = new OracleCommand();
+
+
+            cmd.CommandText = "select * from benhnhan";
+            cmd.Connection = conn;
+
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridViewDAHSBA.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        private void textBoxCMND_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonReLoad_Click(object sender, EventArgs e)
+        {
+            OracleCommand cmd = new OracleCommand();
+
+
+            cmd.CommandText = "select * from benhnhan";
+            cmd.Connection = conn;
+
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridViewDAHSBA.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

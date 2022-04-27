@@ -94,6 +94,9 @@ namespace QuanLyBenhVien
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("THÊM CƠ SỞ Y TẾ THÀNH CÔNG");
 
+                    // tạo tài khoản cho csyt
+                    // gán role csyt cho tài khoản
+
                 }
                 catch (Exception ex)
                 {
@@ -108,6 +111,14 @@ namespace QuanLyBenhVien
         private void buttonListCSYT_Click(object sender, EventArgs e)
         {
             OpenFormAdmin(new Admin_SuaCSYT(), sender);
+        }
+
+        private void Admin_TaoCSYT_Load(object sender, EventArgs e)
+        {
+            Random _r = new Random();
+            int number = _r.Next() % 50 + 50;
+
+            textBoxMa.Text = "CS" + String.Format("{0:D5}", number);
         }
     }
 }

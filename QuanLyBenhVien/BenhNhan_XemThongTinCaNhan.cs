@@ -40,7 +40,7 @@ namespace QuanLyBenhVien
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                dataGridViewThongTinCaNha.DataSource = dt;
+                //dataGridViewThongTinCaNha.DataSource = dt;
 
             }
             catch (Exception ex)
@@ -57,20 +57,20 @@ namespace QuanLyBenhVien
 
         private void dataGridViewThongTinCaNha_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridViewThongTinCaNha.CurrentRow != null && dataGridViewThongTinCaNha.CurrentRow.Index > -1)
-            {
-                textBoxMaBN.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value.ToString() : "";
-                textBoxMaCSYT.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value.ToString() : "";
-                textBoxTenBN .Text= dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value.ToString() : "";
-                textBoxCMND.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value.ToString() : "";
-                dateTimePicker1.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value.ToString() : "";
-                textBoxSoNha.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value.ToString() : "";
-                textBoxTenDuong.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value.ToString() : "";
-                textBoxQuanHuyen.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value.ToString() : "";
-                textBoxTinh.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value.ToString() : "";
-                richTextBoxTSB.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value.ToString() : "";
-                richTextBoxTSBGD.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value.ToString() : "";
-            }
+            //if (dataGridViewThongTinCaNha.CurrentRow != null && dataGridViewThongTinCaNha.CurrentRow.Index > -1)
+            //{
+            //    textBoxMaBN.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value.ToString() : "";
+            //    textBoxMaCSYT.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value.ToString() : "";
+            //    textBoxTenBN .Text= dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value.ToString() : "";
+            //    textBoxCMND.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value.ToString() : "";
+            //    dateTimePicker1.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value.ToString() : "";
+            //    textBoxSoNha.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value.ToString() : "";
+            //    textBoxTenDuong.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value.ToString() : "";
+            //    textBoxQuanHuyen.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value.ToString() : "";
+            //    textBoxTinh.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value.ToString() : "";
+            //    richTextBoxTSB.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value.ToString() : "";
+            //    richTextBoxTSBGD.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value.ToString() : "";
+            //}
         }
     }
 }

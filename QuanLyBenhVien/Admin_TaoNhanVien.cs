@@ -100,7 +100,7 @@ namespace QuanLyBenhVien
             if (radioButtonNu.Checked == true) Phai = "Nu";
             string ngaysinh = "TO_DATE('" + dateTimePicker1.Text + "', 'mm/dd/yyyy')";
             string chuyenkhoa = comboBoxChuyenKhoa.Text;
-            if (comboBoxVaiTro.Text == "") chuyenkhoa = "NULL";
+            if (comboBoxVaiTro.Text != "Y/BAC SI") chuyenkhoa = "NULL";
 
             string sql;
             sql = "INSERT INTO NHANVIEN VALUES " + " ('" + textBoxMaNV.Text + "','" + textBoxHoTen.Text + "','" + Phai + "'," + ngaysinh +
@@ -111,7 +111,7 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;
-           // MessageBox.Show(sql);
+           
 
             System.Windows.Forms.Clipboard.SetDataObject(sql, true);
 
@@ -119,6 +119,9 @@ namespace QuanLyBenhVien
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("THÊM NHÂN VIÊN THÀNH CÔNG");
+
+                // tạo tài khoản cho nhân viên
+                //gán role nhân viên cho nhân viên 
 
             }
             catch (Exception ex)
@@ -134,30 +137,38 @@ namespace QuanLyBenhVien
 
         private void Admin_TaoNhanVien_Load(object sender, EventArgs e)
         {
-            OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = "SELECT ROLE FROM DBA_ROLES ORDER BY ROLE_ID DESC";
+            Random _r = new Random();
+            int number = _r.Next() % 500 + 500;
 
+            textBoxMaNV.Text = "NV" + String.Format("{0:D5}", number);
+
+            comboBoxVaiTro.DisplayMember = "Text";
+            comboBoxVaiTro.ValueMember = "Value";
+
+            comboBoxVaiTro.Items.Add(new { Text = "THANH TRA", Value = "THANH TRA" });
+            comboBoxVaiTro.Items.Add(new { Text = "CO SO Y TE", Value = "CO SO Y TE" });
+            comboBoxVaiTro.Items.Add(new { Text = "Y/BAC SI", Value = "Y/BAC SI" });
+            comboBoxVaiTro.Items.Add(new { Text = "NGHIEN CUU", Value = "NGHIEN CUU" });
+
+
+
+
+            comboBoxChuyenKhoa.DisplayMember = "Text";
+            comboBoxChuyenKhoa.ValueMember = "Value";
+
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NOI", Value = "NOI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NHI", Value = "NHI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "SAN", Value = "SAN" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "TIM MACH", Value = "TIM MACH" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NGOAI", Value = "NGOAI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "DINH DUONG", Value = "DINH DUONG" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "HOI SUC", Value = "HOI SUC" });
+            
+
+            OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
 
-            try
-            {
-
-                cmd.ExecuteNonQuery();
-                OracleDataAdapter da = new OracleDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                comboBoxVaiTro.DataSource = dt;
-                comboBoxVaiTro.DisplayMember = dt.Columns[0].ColumnName;
-                comboBoxVaiTro.ValueMember = dt.Columns[0].ColumnName;
-                comboBoxVaiTro.SelectedIndex = -1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-
-            cmd.CommandText = "SELECT ROLE FROM DBA_ROLES ORDER BY ROLE_ID DESC";
+            cmd.CommandText = "SELECT MACSYT FROM CSYT";
             try
             {
 
@@ -176,24 +187,19 @@ namespace QuanLyBenhVien
             }
 
 
-            cmd.CommandText = "SELECT ROLE FROM DBA_ROLES ORDER BY ROLE_ID DESC";
-            try
-            {
 
-                cmd.ExecuteNonQuery();
-                OracleDataAdapter da = new OracleDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                comboBoxChuyenKhoa.DataSource = dt;
-                comboBoxChuyenKhoa.DisplayMember = dt.Columns[0].ColumnName;
-                comboBoxChuyenKhoa.ValueMember = dt.Columns[0].ColumnName;
+
+        }
+
+        private void comboBoxChuyenKhoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxVaiTro.Text!= "Y/BAC SI")
+            {
                 comboBoxChuyenKhoa.SelectedIndex = -1;
+                
+                MessageBox.Show("CHỈ CÓ Y/BÁC SĨ MỚI CÓ CHUYÊN KHOA");
+               
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
         }
     }
 }

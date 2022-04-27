@@ -92,6 +92,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ThongBao";
             this.Text = "ThongBao";
+            this.Load += new System.EventHandler(this.ThongBao_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongBao)).EndInit();

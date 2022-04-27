@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using System.Data.SqlClient;
-
+using QuanLyBenhVien.Controller;
 namespace QuanLyBenhVien
 {
     public partial class DangNhap : Form
@@ -69,9 +69,12 @@ namespace QuanLyBenhVien
             Username = textUsername.Text;
             Password = textPassword.Text;
             string check = Username.Substring(0, 2);
+
             check=check.ToUpper();
-           
+
             OracleConnection conn = OracleConnect();
+
+           
             try
             {
                 if (conn.State != ConnectionState.Open)
@@ -79,51 +82,48 @@ namespace QuanLyBenhVien
                     conn.Open();
                     textUsername.Text = "";
                     textPassword.Text = "";
-                    
+
+                    if (check == "QT")
+                    {
+                        OpenForm(new Admin_Menu(), sender);
+                                               
+                        
+
+                    }
+                    else if (check == "NV")
+                    {          
+                        string role = LayRole.LayThongTinRole(Username);
+                        
+                        if (role == "THANH TRA")
+                        {
+                            OpenForm(new ThanhTra(), sender);
+                        }
+                        else if (role == "CO SO Y TE")
+                        {
+                            OpenForm(new CoSoYTe(), sender);
+                        }
+                        else if (role == "Y/BAC SI")
+                        {
+                            OpenForm(new BacSi(), sender);
+                        }
+                        else if (role == "NGHIEN CUU")
+                        {
+                            OpenForm(new NghienCuu(), sender);
+                        }
+                    }
+                    else if (check == "BN")
+                    {
+                        OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
+                    }
+
                 }
-                if (check == "QT") {
-                    OpenForm(new Admin_Menu(), sender);
-                }
-                else if (check == "NV")
-                {
-                    OracleCommand cmd = new OracleCommand();
 
 
-                    cmd.CommandText = "select vaitro from nhanvien where manv = " + Username;
-                    cmd.Connection = conn;
-                    cmd.ExecuteNonQuery();
-                    OracleDataAdapter da = new OracleDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    string role = dt.Rows[0][0].ToString();
-                    role = role.ToUpper();
-                    role.ToUpper();
-                    if (role == "THANHTRA TRA")
-                    {
-                        OpenForm(new ThanhTra(), sender);
-                    }
-                    else if (role=="CO SO Y TE")
-                    {
-                        OpenForm(new CoSoYTe(), sender);
-                    }
-                    else if (role== "Y/BAC SI")
-                    {
-                        OpenForm(new BacSi(), sender);
-                    }
-                    else if(role=="NGHIEN CUU")
-                    {
-                        OpenForm(new NghienCuu(), sender);
-                    }
-                }
-                else if (check == "BN")
-                {
-                    OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
-                }
-               
+                
             }
             catch
             {
-                MessageBox.Show("Sai mật khẩu hoặc password !", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sai mật khẩu hoặc password 1 !", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
         }

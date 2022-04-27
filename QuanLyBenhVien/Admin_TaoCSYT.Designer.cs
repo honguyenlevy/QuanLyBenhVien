@@ -190,6 +190,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin_TaoCSYT";
             this.Text = "Admin_TaoCSYT";
+            this.Load += new System.EventHandler(this.Admin_TaoCSYT_Load);
             this.tableLayoutPanelTaoCSYT.ResumeLayout(false);
             this.tableLayoutPanelTaoCSYT.PerformLayout();
             this.ResumeLayout(false);

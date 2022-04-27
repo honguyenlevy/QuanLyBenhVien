@@ -372,6 +372,7 @@ namespace QuanLyBenhVien
             this.buttonUpdate.TabIndex = 22;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -446,13 +447,13 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxCSYT;
-        private System.Windows.Forms.ComboBox comboBoxVaiTro;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBoxChuyenKhoa;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBoxVaiTro;
+        private System.Windows.Forms.ComboBox comboBoxChuyenKhoa;
     }
 }

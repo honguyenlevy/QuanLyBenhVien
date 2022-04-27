@@ -106,6 +106,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CSYT_DanhSachHSBA";
             this.Text = "CSYT_DanhSachHSBA";
+            this.Load += new System.EventHandler(this.CSYT_DanhSachHSBA_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -216,3 +216,8 @@ C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVie
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.NhanVien_XemThongTinCaNhan.resources
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.ThanhTra.resources
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.ThanhTra_XemThongTin.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_Audit.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.Admin_SuaCSYT.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.BenhNhan_DanhSachBenhNhan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.NhanVien_DanhSachNhanVien.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\QuanLyBenhVien\QuanLyBenhVien\obj\Debug\QuanLyBenhVien.ThongBao.resources

@@ -67,5 +67,10 @@ namespace QuanLyBenhVien
                 OpenFormAdmin(new DangNhap(), sender);
             }
         }
+
+        private void panelBacSi_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

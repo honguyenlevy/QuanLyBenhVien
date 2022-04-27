@@ -294,12 +294,13 @@ namespace QuanLyBenhVien
             this.buttonTao.TabIndex = 33;
             this.buttonTao.Text = "Create";
             this.buttonTao.UseVisualStyleBackColor = false;
+            this.buttonTao.Click += new System.EventHandler(this.buttonTao_Click);
             // 
             // comboBoxMaKhoa
             // 
             this.comboBoxMaKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxMaKhoa.FormattingEnabled = true;
-            this.comboBoxMaKhoa.Location = new System.Drawing.Point(752, 131);
+            this.comboBoxMaKhoa.Location = new System.Drawing.Point(752, 135);
             this.comboBoxMaKhoa.Name = "comboBoxMaKhoa";
             this.comboBoxMaKhoa.Size = new System.Drawing.Size(319, 33);
             this.comboBoxMaKhoa.TabIndex = 42;
@@ -314,6 +315,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CSYT_ThemHSBA";
             this.Text = "CSYT_ThemHSBA";
+            this.Load += new System.EventHandler(this.CSYT_ThemHSBA_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

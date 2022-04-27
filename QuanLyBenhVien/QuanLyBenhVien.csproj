@@ -192,6 +192,7 @@
       <DependentUpon>BenhNhan_XemThongTinCaNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectData.cs" />
+    <Compile Include="Controller\LayRole.cs" />
     <Compile Include="CoSoYTe.cs">
       <SubType>Form</SubType>
     </Compile>

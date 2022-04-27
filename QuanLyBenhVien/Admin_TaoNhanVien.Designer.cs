@@ -303,7 +303,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxCSYT.FormattingEnabled = true;
-            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 266);
+            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 262);
             this.comboBoxCSYT.Name = "comboBoxCSYT";
             this.comboBoxCSYT.Size = new System.Drawing.Size(352, 33);
             this.comboBoxCSYT.TabIndex = 15;
@@ -312,7 +312,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxVaiTro.FormattingEnabled = true;
-            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 266);
+            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 262);
             this.comboBoxVaiTro.Name = "comboBoxVaiTro";
             this.comboBoxVaiTro.Size = new System.Drawing.Size(352, 33);
             this.comboBoxVaiTro.TabIndex = 16;
@@ -358,10 +358,11 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxChuyenKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChuyenKhoa.FormattingEnabled = true;
-            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 344);
+            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 340);
             this.comboBoxChuyenKhoa.Name = "comboBoxChuyenKhoa";
             this.comboBoxChuyenKhoa.Size = new System.Drawing.Size(352, 33);
             this.comboBoxChuyenKhoa.TabIndex = 21;
+            this.comboBoxChuyenKhoa.SelectedIndexChanged += new System.EventHandler(this.comboBoxChuyenKhoa_SelectedIndexChanged);
             // 
             // buttonTao
             // 

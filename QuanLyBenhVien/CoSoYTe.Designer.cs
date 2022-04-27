@@ -31,12 +31,12 @@ namespace QuanLyBenhVien
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonDangXuat = new System.Windows.Forms.Button();
             this.buttonDSHSBADV = new System.Windows.Forms.Button();
             this.buttonThemHSBADV = new System.Windows.Forms.Button();
             this.buttonDSHSBA = new System.Windows.Forms.Button();
             this.buttonThemHSBA = new System.Windows.Forms.Button();
             this.panelCSYT = new System.Windows.Forms.Panel();
-            this.buttonDangXuat = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,20 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(294, 697);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // buttonDangXuat
+            // 
+            this.buttonDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
+            this.buttonDangXuat.Location = new System.Drawing.Point(3, 279);
+            this.buttonDangXuat.Name = "buttonDangXuat";
+            this.buttonDangXuat.Size = new System.Drawing.Size(288, 63);
+            this.buttonDangXuat.TabIndex = 3;
+            this.buttonDangXuat.Text = "Đăng xuất";
+            this.buttonDangXuat.UseVisualStyleBackColor = false;
+            this.buttonDangXuat.Click += new System.EventHandler(this.buttonDangXuat_Click);
             // 
             // buttonDSHSBADV
             // 
@@ -148,20 +162,6 @@ namespace QuanLyBenhVien
             this.panelCSYT.Size = new System.Drawing.Size(894, 697);
             this.panelCSYT.TabIndex = 1;
             // 
-            // buttonDangXuat
-            // 
-            this.buttonDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
-            this.buttonDangXuat.Location = new System.Drawing.Point(3, 279);
-            this.buttonDangXuat.Name = "buttonDangXuat";
-            this.buttonDangXuat.Size = new System.Drawing.Size(288, 63);
-            this.buttonDangXuat.TabIndex = 3;
-            this.buttonDangXuat.Text = "Đăng xuất";
-            this.buttonDangXuat.UseVisualStyleBackColor = false;
-            this.buttonDangXuat.Click += new System.EventHandler(this.buttonDangXuat_Click);
-            // 
             // CoSoYTe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -173,6 +173,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CoSoYTe";
             this.Text = "CoSoYTe";
+            this.Load += new System.EventHandler(this.CoSoYTe_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
