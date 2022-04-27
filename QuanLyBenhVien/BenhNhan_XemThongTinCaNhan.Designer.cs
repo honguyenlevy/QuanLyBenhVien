@@ -42,23 +42,21 @@ namespace QuanLyBenhVien
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxSoNha = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBoxTSB = new System.Windows.Forms.RichTextBox();
             this.richTextBoxTSBGD = new System.Windows.Forms.RichTextBox();
-            this.buttonTao = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dataGridViewThongTinCaNha = new System.Windows.Forms.DataGridView();
+            this.buttonSua = new System.Windows.Forms.Button();
             this.textBoxTinh = new System.Windows.Forms.TextBox();
-            this.textBoxSoNha = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.textBoxTenDuong = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.textBoxQuanHuyen = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinCaNha)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel3
@@ -106,8 +104,7 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1.Controls.Add(this.label4, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.richTextBoxTSB, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.richTextBoxTSBGD, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.buttonTao, 5, 7);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridViewThongTinCaNha, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSua, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTinh, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenDuong, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxQuanHuyen, 5, 3);
@@ -242,6 +239,50 @@ namespace QuanLyBenhVien
             this.label11.Text = "Tỉnh/Thành phố";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(631, 186);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(124, 62);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Quận/Huyện";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(631, 248);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 62);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Số nhà";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBoxSoNha
+            // 
+            this.textBoxSoNha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSoNha.Location = new System.Drawing.Point(801, 264);
+            this.textBoxSoNha.Name = "textBoxSoNha";
+            this.textBoxSoNha.Size = new System.Drawing.Size(322, 30);
+            this.textBoxSoNha.TabIndex = 21;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(68, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 62);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Tên đường";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -288,16 +329,37 @@ namespace QuanLyBenhVien
             this.richTextBoxTSBGD.TabIndex = 30;
             this.richTextBoxTSBGD.Text = "";
             // 
-            // buttonTao
+            // buttonSua
             // 
-            this.buttonTao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonTao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
-            this.buttonTao.Location = new System.Drawing.Point(964, 438);
-            this.buttonTao.Name = "buttonTao";
-            this.buttonTao.Size = new System.Drawing.Size(159, 56);
-            this.buttonTao.TabIndex = 31;
-            this.buttonTao.Text = "Create";
-            this.buttonTao.UseVisualStyleBackColor = false;
+            this.buttonSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
+            this.buttonSua.Location = new System.Drawing.Point(964, 438);
+            this.buttonSua.Name = "buttonSua";
+            this.buttonSua.Size = new System.Drawing.Size(159, 56);
+            this.buttonSua.TabIndex = 31;
+            this.buttonSua.Text = "Update";
+            this.buttonSua.UseVisualStyleBackColor = false;
+            // 
+            // textBoxTinh
+            // 
+            this.textBoxTinh.Location = new System.Drawing.Point(238, 189);
+            this.textBoxTinh.Name = "textBoxTinh";
+            this.textBoxTinh.Size = new System.Drawing.Size(322, 30);
+            this.textBoxTinh.TabIndex = 33;
+            // 
+            // textBoxTenDuong
+            // 
+            this.textBoxTenDuong.Location = new System.Drawing.Point(238, 251);
+            this.textBoxTenDuong.Name = "textBoxTenDuong";
+            this.textBoxTenDuong.Size = new System.Drawing.Size(322, 30);
+            this.textBoxTenDuong.TabIndex = 34;
+            // 
+            // textBoxQuanHuyen
+            // 
+            this.textBoxQuanHuyen.Location = new System.Drawing.Point(801, 189);
+            this.textBoxQuanHuyen.Name = "textBoxQuanHuyen";
+            this.textBoxQuanHuyen.Size = new System.Drawing.Size(322, 30);
+            this.textBoxQuanHuyen.TabIndex = 35;
             // 
             // label12
             // 
@@ -313,82 +375,6 @@ namespace QuanLyBenhVien
             this.label12.TabIndex = 1;
             this.label12.Text = "Thông tin cá nhân";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridViewThongTinCaNha
-            // 
-            this.dataGridViewThongTinCaNha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewThongTinCaNha.Location = new System.Drawing.Point(238, 438);
-            this.dataGridViewThongTinCaNha.Name = "dataGridViewThongTinCaNha";
-            this.dataGridViewThongTinCaNha.RowHeadersWidth = 51;
-            this.dataGridViewThongTinCaNha.RowTemplate.Height = 24;
-            this.dataGridViewThongTinCaNha.Size = new System.Drawing.Size(322, 56);
-            this.dataGridViewThongTinCaNha.TabIndex = 32;
-            this.dataGridViewThongTinCaNha.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewThongTinCaNha_CellContentClick);
-            // 
-            // textBoxTinh
-            // 
-            this.textBoxTinh.Location = new System.Drawing.Point(238, 189);
-            this.textBoxTinh.Name = "textBoxTinh";
-            this.textBoxTinh.Size = new System.Drawing.Size(322, 30);
-            this.textBoxTinh.TabIndex = 33;
-            // 
-            // textBoxSoNha
-            // 
-            this.textBoxSoNha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSoNha.Location = new System.Drawing.Point(801, 264);
-            this.textBoxSoNha.Name = "textBoxSoNha";
-            this.textBoxSoNha.Size = new System.Drawing.Size(322, 30);
-            this.textBoxSoNha.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(631, 248);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 62);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Số nhà";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBoxTenDuong
-            // 
-            this.textBoxTenDuong.Location = new System.Drawing.Point(238, 251);
-            this.textBoxTenDuong.Name = "textBoxTenDuong";
-            this.textBoxTenDuong.Size = new System.Drawing.Size(322, 30);
-            this.textBoxTenDuong.TabIndex = 34;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 248);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 62);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Tên đường";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(631, 186);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 62);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Quận/Huyện";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBoxQuanHuyen
-            // 
-            this.textBoxQuanHuyen.Location = new System.Drawing.Point(801, 189);
-            this.textBoxQuanHuyen.Name = "textBoxQuanHuyen";
-            this.textBoxQuanHuyen.Size = new System.Drawing.Size(322, 30);
-            this.textBoxQuanHuyen.TabIndex = 35;
             // 
             // BenhNhan_XemThongTinCaNhan
             // 
@@ -406,7 +392,6 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinCaNha)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,8 +416,7 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBoxTSB;
         private System.Windows.Forms.RichTextBox richTextBoxTSBGD;
-        private System.Windows.Forms.Button buttonTao;
-        private System.Windows.Forms.DataGridView dataGridViewThongTinCaNha;
+        private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxSoNha;

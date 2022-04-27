@@ -41,6 +41,7 @@
             this.buttonTaoNV = new System.Windows.Forms.Button();
             this.buttonTaoBN = new System.Windows.Forms.Button();
             this.buttonTaoCSYT = new System.Windows.Forms.Button();
+            this.buttonAudit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelMenuAdmin.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -48,12 +49,14 @@
             // 
             // btnDangXuat
             // 
-            this.btnDangXuat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDangXuat.Location = new System.Drawing.Point(4, 739);
+            this.btnDangXuat.Location = new System.Drawing.Point(4, 831);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(337, 86);
+            this.btnDangXuat.Size = new System.Drawing.Size(337, 91);
             this.btnDangXuat.TabIndex = 5;
             this.btnDangXuat.Text = "LOG OUT";
             this.btnDangXuat.UseVisualStyleBackColor = true;
@@ -169,8 +172,8 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.buttonAudit, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.buttonTaoNV, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.btnDangXuat, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.btnDanhSach, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnThuQuyen, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnThongTinQuyen, 0, 1);
@@ -178,6 +181,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnTaoUserRole, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.buttonTaoBN, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.buttonTaoCSYT, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.btnDangXuat, 0, 9);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -238,6 +242,20 @@
             this.buttonTaoCSYT.UseVisualStyleBackColor = true;
             this.buttonTaoCSYT.Click += new System.EventHandler(this.buttonTaoCSYT_Click);
             // 
+            // buttonAudit
+            // 
+            this.buttonAudit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAudit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAudit.Location = new System.Drawing.Point(4, 739);
+            this.buttonAudit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonAudit.Name = "buttonAudit";
+            this.buttonAudit.Size = new System.Drawing.Size(337, 86);
+            this.buttonAudit.TabIndex = 6;
+            this.buttonAudit.Text = "VIEW AUDIT";
+            this.buttonAudit.UseVisualStyleBackColor = true;
+            // 
             // Admin_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -270,5 +288,6 @@
         private System.Windows.Forms.Button buttonTaoNV;
         private System.Windows.Forms.Button buttonTaoBN;
         private System.Windows.Forms.Button buttonTaoCSYT;
+        private System.Windows.Forms.Button buttonAudit;
     }
 }

@@ -14,6 +14,7 @@ namespace QuanLyBenhVien
 {
     public partial class Admin_TaoCSYT : Form
     {
+        private Form activeForm;
         public static OracleConnection conn = DangNhap.OracleConnect();
         public Admin_TaoCSYT()
         {
@@ -23,6 +24,22 @@ namespace QuanLyBenhVien
             {
                 conn.Open();
             }
+        }
+
+        private void OpenFormAdmin(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.tableLayoutPanelTaoCSYT.Controls.Add(childForm);
+            this.tableLayoutPanelTaoCSYT.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void buttonTao_Click(object sender, EventArgs e)
@@ -87,5 +104,10 @@ namespace QuanLyBenhVien
 
             }
             }
+
+        private void buttonListCSYT_Click(object sender, EventArgs e)
+        {
+            OpenFormAdmin(new Admin_SuaCSYT(), sender);
+        }
     }
 }

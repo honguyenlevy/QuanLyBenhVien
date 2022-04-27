@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Audit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Audit.Designer.cs">
+      <DependentUpon>Admin_Audit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_CapQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="Admin_Menu.Designer.cs">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SuaCSYT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_SuaCSYT.Designer.cs">
+      <DependentUpon>Admin_SuaCSYT.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_TaoBenhNhan.cs">
       <SubType>Form</SubType>
@@ -167,6 +179,12 @@
     <Compile Include="BacSi_XemThongTinBenhNhan.Designer.cs">
       <DependentUpon>BacSi_XemThongTinBenhNhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="BenhNhan_DanhSachBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenhNhan_DanhSachBenhNhan.Designer.cs">
+      <DependentUpon>BenhNhan_DanhSachBenhNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="BenhNhan_XemThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +228,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVien_DanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien_DanhSachNhanVien.Designer.cs">
+      <DependentUpon>NhanVien_DanhSachNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +272,15 @@
     <Compile Include="ThanhTra_XemThongTin.Designer.cs">
       <DependentUpon>ThanhTra_XemThongTin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongBao.Designer.cs">
+      <DependentUpon>ThongBao.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Audit.resx">
+      <DependentUpon>Admin_Audit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_CapQuyen.resx">
       <DependentUpon>Admin_CapQuyen.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Menu.resx">
       <DependentUpon>Admin_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_SuaCSYT.resx">
+      <DependentUpon>Admin_SuaCSYT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_TaoBenhNhan.resx">
       <DependentUpon>Admin_TaoBenhNhan.cs</DependentUpon>
@@ -308,6 +344,9 @@
     <EmbeddedResource Include="BacSi_XemThongTinBenhNhan.resx">
       <DependentUpon>BacSi_XemThongTinBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BenhNhan_DanhSachBenhNhan.resx">
+      <DependentUpon>BenhNhan_DanhSachBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BenhNhan_XemThongTinCaNhan.resx">
       <DependentUpon>BenhNhan_XemThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien_DanhSachNhanVien.resx">
+      <DependentUpon>NhanVien_DanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -351,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThanhTra_XemThongTin.resx">
       <DependentUpon>ThanhTra_XemThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao.resx">
+      <DependentUpon>ThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

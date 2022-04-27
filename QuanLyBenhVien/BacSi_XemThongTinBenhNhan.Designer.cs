@@ -283,7 +283,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxMaKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxMaKhoa.FormattingEnabled = true;
-            this.comboBoxMaKhoa.Location = new System.Drawing.Point(752, 291);
+            this.comboBoxMaKhoa.Location = new System.Drawing.Point(752, 295);
             this.comboBoxMaKhoa.Name = "comboBoxMaKhoa";
             this.comboBoxMaKhoa.Size = new System.Drawing.Size(319, 33);
             this.comboBoxMaKhoa.TabIndex = 42;
@@ -304,7 +304,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxMaDV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxMaDV.FormattingEnabled = true;
-            this.comboBoxMaDV.Location = new System.Drawing.Point(752, 209);
+            this.comboBoxMaDV.Location = new System.Drawing.Point(752, 213);
             this.comboBoxMaDV.Name = "comboBoxMaDV";
             this.comboBoxMaDV.Size = new System.Drawing.Size(319, 33);
             this.comboBoxMaDV.TabIndex = 44;
@@ -432,7 +432,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxTinhTP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxTinhTP.FormattingEnabled = true;
-            this.comboBoxTinhTP.Location = new System.Drawing.Point(190, 86);
+            this.comboBoxTinhTP.Location = new System.Drawing.Point(190, 90);
             this.comboBoxTinhTP.Name = "comboBoxTinhTP";
             this.comboBoxTinhTP.Size = new System.Drawing.Size(316, 33);
             this.comboBoxTinhTP.TabIndex = 54;
@@ -453,7 +453,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxQuanHuyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxQuanHuyen.FormattingEnabled = true;
-            this.comboBoxQuanHuyen.Location = new System.Drawing.Point(752, 86);
+            this.comboBoxQuanHuyen.Location = new System.Drawing.Point(752, 90);
             this.comboBoxQuanHuyen.Name = "comboBoxQuanHuyen";
             this.comboBoxQuanHuyen.Size = new System.Drawing.Size(319, 33);
             this.comboBoxQuanHuyen.TabIndex = 56;
@@ -474,7 +474,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxTenDuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxTenDuong.FormattingEnabled = true;
-            this.comboBoxTenDuong.Location = new System.Drawing.Point(190, 127);
+            this.comboBoxTenDuong.Location = new System.Drawing.Point(190, 131);
             this.comboBoxTenDuong.Name = "comboBoxTenDuong";
             this.comboBoxTenDuong.Size = new System.Drawing.Size(316, 33);
             this.comboBoxTenDuong.TabIndex = 58;

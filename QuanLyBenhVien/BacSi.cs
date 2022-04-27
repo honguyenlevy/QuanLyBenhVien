@@ -49,7 +49,7 @@ namespace QuanLyBenhVien
 
             buttonXemCaNhan.BackColor = Color.FromArgb(107, 155, 55);
 
-            OpenFormAdmin(new NhanVien_XemThongTinCaNhan(), sender);
+            OpenFormAdmin(new NhanVien_DanhSachNhanVien(), sender);
         }
 
         private void buttonDangXuat_Click(object sender, EventArgs e)
