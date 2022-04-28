@@ -67,13 +67,13 @@ namespace QuanLyBenhVien
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxCMND = new System.Windows.Forms.TextBox();
             this.buttonReLoad = new System.Windows.Forms.Button();
+            this.textBoxQuanHuyen = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonEnter = new System.Windows.Forms.Button();
             this.textBoxMaBenhNhan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewDAHSBA = new System.Windows.Forms.DataGridView();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBoxQuanHuyen = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -541,6 +541,13 @@ namespace QuanLyBenhVien
             this.buttonReLoad.UseVisualStyleBackColor = true;
             this.buttonReLoad.Click += new System.EventHandler(this.buttonReLoad_Click);
             // 
+            // textBoxQuanHuyen
+            // 
+            this.textBoxQuanHuyen.Location = new System.Drawing.Point(752, 85);
+            this.textBoxQuanHuyen.Name = "textBoxQuanHuyen";
+            this.textBoxQuanHuyen.Size = new System.Drawing.Size(319, 30);
+            this.textBoxQuanHuyen.TabIndex = 70;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -617,13 +624,6 @@ namespace QuanLyBenhVien
             this.label20.TabIndex = 4;
             this.label20.Text = "Thông tin bệnh nhân";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxQuanHuyen
-            // 
-            this.textBoxQuanHuyen.Location = new System.Drawing.Point(752, 85);
-            this.textBoxQuanHuyen.Name = "textBoxQuanHuyen";
-            this.textBoxQuanHuyen.Size = new System.Drawing.Size(319, 30);
-            this.textBoxQuanHuyen.TabIndex = 70;
             // 
             // BacSi_XemThongTinBenhNhan
             // 

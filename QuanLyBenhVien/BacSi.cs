@@ -40,6 +40,10 @@ namespace QuanLyBenhVien
 
             buttonXemCaNhan.BackColor = Color.FromArgb(179, 229, 252);
 
+            buttonThongBao.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
             OpenFormAdmin(new BacSi_XemThongTinBenhNhan(), sender);
         }
 
@@ -48,6 +52,11 @@ namespace QuanLyBenhVien
             buttonXemBenhNhan.BackColor = Color.FromArgb(179, 229, 252);
 
             buttonXemCaNhan.BackColor = Color.FromArgb(107, 155, 55);
+
+            buttonDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonThongBao.BackColor = Color.FromArgb(179, 229, 252);
+
 
             OpenFormAdmin(new NhanVien_DanhSachNhanVien(), sender);
         }
@@ -59,6 +68,8 @@ namespace QuanLyBenhVien
             buttonXemCaNhan.BackColor = Color.FromArgb(179, 229, 252);
 
             buttonDangXuat.BackColor = Color.FromArgb(107, 155, 55);
+
+            buttonThongBao.BackColor = Color.FromArgb(179, 229, 252);
 
             DialogResult dialogResult = MessageBox.Show("Choose yes to log out", "Do you want to log out  ?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)

@@ -114,7 +114,7 @@ namespace QuanLyBenhVien
                     }
                     else if (check == "BN")
                     {
-                        OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
+                         OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
 
                         //OpenForm(new BenhNhan_XemThongTinCaNhan(), sender);
                     }
