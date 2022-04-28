@@ -54,8 +54,10 @@ namespace QuanLyBenhVien
             {
                 MessageBox.Show(ex.Message);
             }
-
-        }
+            
+                       
+                   
+            }
 
         private void buttonTao_Click(object sender, EventArgs e)
         {
@@ -75,10 +77,32 @@ namespace QuanLyBenhVien
 
             //create user nua ne
             // gan role benhnhan cho benhnhan moi dc tao
+           
+
+
+           
+
             try
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("THÊM BỆNH NHÂN THÀNH CÔNG");
+
+                string userCreate;
+
+                cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.Connection = conn;
+                cmd.ExecuteNonQuery();
+
+                userCreate = "  create user " + textBoxMaBN.Text + " identified by 1  ";
+                cmd.CommandText = userCreate;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "grant  role_benhnhan  to " + textBoxMaBN.Text;
+
+                cmd.ExecuteNonQuery();
 
             }
             catch (Exception ex)

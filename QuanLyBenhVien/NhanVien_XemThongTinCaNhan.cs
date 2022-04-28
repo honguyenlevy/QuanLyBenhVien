@@ -28,12 +28,28 @@ namespace QuanLyBenhVien
         {
             OracleCommand cmd = new OracleCommand();
 
-
-            cmd.CommandText = "select * from qtv.nhanvien";
-
-           
+ 
             cmd.Connection = conn;
 
+            cmd.CommandText = "SELECT MACSYT FROM qtv.CSYT";
+            try
+            {
+
+                cmd.ExecuteNonQuery();
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                comboBoxCSYT.DataSource = dt;
+                comboBoxCSYT.DisplayMember = dt.Columns[0].ColumnName;
+                comboBoxCSYT.ValueMember = dt.Columns[0].ColumnName;
+                comboBoxCSYT.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            cmd.CommandText = "select * from qtv.nhanvien";
             try
             {
 
@@ -62,6 +78,7 @@ namespace QuanLyBenhVien
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
         private void dataGridViewTTCaNhan_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -106,7 +123,7 @@ namespace QuanLyBenhVien
 
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;
-            MessageBox.Show(sql);
+           
 
             try
             {

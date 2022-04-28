@@ -111,9 +111,10 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;
-           
+            cmd.Connection = conn;
 
-            System.Windows.Forms.Clipboard.SetDataObject(sql, true);
+
+
 
             try
             {
@@ -122,6 +123,23 @@ namespace QuanLyBenhVien
 
                 // tạo tài khoản cho nhân viên
                 //gán role nhân viên cho nhân viên 
+
+                string userCreate;
+
+                cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
+                
+
+               
+                cmd.ExecuteNonQuery();
+
+                userCreate = "  create user " + textBoxMaNV.Text + " identified by 1  ";
+                cmd.CommandText = userCreate;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "grant  role_nhanvien  to " + textBoxMaNV.Text;
+
+                cmd.ExecuteNonQuery();
 
             }
             catch (Exception ex)

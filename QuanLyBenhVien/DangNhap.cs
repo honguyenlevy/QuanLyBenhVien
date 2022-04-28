@@ -86,8 +86,9 @@ namespace QuanLyBenhVien
                     if (check == "QT")
                     {
                         OpenForm(new Admin_Menu(), sender);
-                                               
-                        
+
+                        //OpenForm(new ThanhTra(), sender);
+
 
                     }
                     else if (check == "NV")
@@ -113,7 +114,9 @@ namespace QuanLyBenhVien
                     }
                     else if (check == "BN")
                     {
-                        OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
+                        //OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
+
+                        OpenForm(new BenhNhan_XemThongTinCaNhan(), sender);
                     }
 
                 }
@@ -123,7 +126,7 @@ namespace QuanLyBenhVien
             }
             catch
             {
-                MessageBox.Show("Sai mật khẩu hoặc password 1 !", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sai mật khẩu hoặc password  !", "Login error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
         }

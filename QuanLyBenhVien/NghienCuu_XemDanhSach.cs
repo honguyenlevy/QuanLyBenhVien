@@ -36,27 +36,7 @@ namespace QuanLyBenhVien
 
         private void NghienCuu_XemDanhSach_Load(object sender, EventArgs e)
         {
-            OracleCommand cmd = new OracleCommand();
-
-            cmd.CommandText = "select * from HSBA";
-
-
-            cmd.Connection = conn;
-
-            try
-            {
-
-                cmd.ExecuteNonQuery();
-                OracleDataAdapter da = new OracleDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridViewList.DataSource = dt;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            radioButtonHSBA.Checked = true;
         }
 
         private void radioButtonHSBADV_CheckedChanged(object sender, EventArgs e)

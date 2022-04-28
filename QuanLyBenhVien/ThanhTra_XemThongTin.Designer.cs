@@ -32,12 +32,12 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButtonNghienCuu = new System.Windows.Forms.RadioButton();
-            this.radioButtonYBacSi = new System.Windows.Forms.RadioButton();
+            this.radioButtonHSBA_DV = new System.Windows.Forms.RadioButton();
             this.radioButtonCSYT = new System.Windows.Forms.RadioButton();
-            this.radioButtonThanhTra = new System.Windows.Forms.RadioButton();
+            this.radioButtonHSBA = new System.Windows.Forms.RadioButton();
             this.radioButtonBenhNhan = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButtonNhanVien = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -84,11 +84,11 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.radioButtonNghienCuu, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.radioButtonYBacSi, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonHSBA_DV, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.radioButtonCSYT, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.radioButtonThanhTra, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.radioButtonBenhNhan, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonHSBA, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonNhanVien, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(63, 73);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -97,29 +97,18 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1074, 64);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // radioButtonNghienCuu
+            // radioButtonHSBA_DV
             // 
-            this.radioButtonNghienCuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButtonNghienCuu.AutoSize = true;
-            this.radioButtonNghienCuu.Location = new System.Drawing.Point(859, 17);
-            this.radioButtonNghienCuu.Name = "radioButtonNghienCuu";
-            this.radioButtonNghienCuu.Size = new System.Drawing.Size(212, 29);
-            this.radioButtonNghienCuu.TabIndex = 4;
-            this.radioButtonNghienCuu.TabStop = true;
-            this.radioButtonNghienCuu.Text = "Nghiên cứu";
-            this.radioButtonNghienCuu.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonYBacSi
-            // 
-            this.radioButtonYBacSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButtonYBacSi.AutoSize = true;
-            this.radioButtonYBacSi.Location = new System.Drawing.Point(645, 17);
-            this.radioButtonYBacSi.Name = "radioButtonYBacSi";
-            this.radioButtonYBacSi.Size = new System.Drawing.Size(208, 29);
-            this.radioButtonYBacSi.TabIndex = 3;
-            this.radioButtonYBacSi.TabStop = true;
-            this.radioButtonYBacSi.Text = "Y sĩ/bác sĩ";
-            this.radioButtonYBacSi.UseVisualStyleBackColor = true;
+            this.radioButtonHSBA_DV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButtonHSBA_DV.AutoSize = true;
+            this.radioButtonHSBA_DV.Location = new System.Drawing.Point(859, 17);
+            this.radioButtonHSBA_DV.Name = "radioButtonHSBA_DV";
+            this.radioButtonHSBA_DV.Size = new System.Drawing.Size(212, 29);
+            this.radioButtonHSBA_DV.TabIndex = 4;
+            this.radioButtonHSBA_DV.TabStop = true;
+            this.radioButtonHSBA_DV.Text = "Hồ sơ Bệnh án_DV";
+            this.radioButtonHSBA_DV.UseVisualStyleBackColor = true;
+            this.radioButtonHSBA_DV.CheckedChanged += new System.EventHandler(this.radioButtonHSBA_DV_CheckedChanged);
             // 
             // radioButtonCSYT
             // 
@@ -132,18 +121,20 @@ namespace QuanLyBenhVien
             this.radioButtonCSYT.TabStop = true;
             this.radioButtonCSYT.Text = "Cơ sở y tế";
             this.radioButtonCSYT.UseVisualStyleBackColor = true;
+            this.radioButtonCSYT.CheckedChanged += new System.EventHandler(this.radioButtonCSYT_CheckedChanged);
             // 
-            // radioButtonThanhTra
+            // radioButtonHSBA
             // 
-            this.radioButtonThanhTra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButtonThanhTra.AutoSize = true;
-            this.radioButtonThanhTra.Location = new System.Drawing.Point(217, 17);
-            this.radioButtonThanhTra.Name = "radioButtonThanhTra";
-            this.radioButtonThanhTra.Size = new System.Drawing.Size(208, 29);
-            this.radioButtonThanhTra.TabIndex = 1;
-            this.radioButtonThanhTra.TabStop = true;
-            this.radioButtonThanhTra.Text = "Thanh tra";
-            this.radioButtonThanhTra.UseVisualStyleBackColor = true;
+            this.radioButtonHSBA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButtonHSBA.AutoSize = true;
+            this.radioButtonHSBA.Location = new System.Drawing.Point(645, 17);
+            this.radioButtonHSBA.Name = "radioButtonHSBA";
+            this.radioButtonHSBA.Size = new System.Drawing.Size(208, 29);
+            this.radioButtonHSBA.TabIndex = 1;
+            this.radioButtonHSBA.TabStop = true;
+            this.radioButtonHSBA.Text = "Hồ sơ bệnh án";
+            this.radioButtonHSBA.UseVisualStyleBackColor = true;
+            this.radioButtonHSBA.CheckedChanged += new System.EventHandler(this.radioButtonHSBA_CheckedChanged);
             // 
             // radioButtonBenhNhan
             // 
@@ -156,6 +147,7 @@ namespace QuanLyBenhVien
             this.radioButtonBenhNhan.TabStop = true;
             this.radioButtonBenhNhan.Text = "Bệnh nhân";
             this.radioButtonBenhNhan.UseVisualStyleBackColor = true;
+            this.radioButtonBenhNhan.CheckedChanged += new System.EventHandler(this.radioButtonBenhNhan_CheckedChanged);
             // 
             // label1
             // 
@@ -172,7 +164,20 @@ namespace QuanLyBenhVien
             this.label1.Text = "Xem thông tin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ThanhTra
+            // radioButtonNhanVien
+            // 
+            this.radioButtonNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButtonNhanVien.AutoSize = true;
+            this.radioButtonNhanVien.Location = new System.Drawing.Point(217, 17);
+            this.radioButtonNhanVien.Name = "radioButtonNhanVien";
+            this.radioButtonNhanVien.Size = new System.Drawing.Size(208, 29);
+            this.radioButtonNhanVien.TabIndex = 3;
+            this.radioButtonNhanVien.TabStop = true;
+            this.radioButtonNhanVien.Text = "Nhân viên";
+            this.radioButtonNhanVien.UseVisualStyleBackColor = true;
+            this.radioButtonNhanVien.CheckedChanged += new System.EventHandler(this.radioButtonNhanVien_CheckedChanged);
+            // 
+            // ThanhTra_XemThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +185,9 @@ namespace QuanLyBenhVien
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "ThanhTra";
+            this.Name = "ThanhTra_XemThongTin";
             this.Text = "ThanhTra";
+            this.Load += new System.EventHandler(this.ThanhTra_XemThongTin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -196,11 +202,11 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.RadioButton radioButtonNghienCuu;
-        private System.Windows.Forms.RadioButton radioButtonYBacSi;
+        private System.Windows.Forms.RadioButton radioButtonHSBA_DV;
         private System.Windows.Forms.RadioButton radioButtonCSYT;
-        private System.Windows.Forms.RadioButton radioButtonThanhTra;
+        private System.Windows.Forms.RadioButton radioButtonHSBA;
         private System.Windows.Forms.RadioButton radioButtonBenhNhan;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton radioButtonNhanVien;
     }
 }

@@ -35,7 +35,6 @@ namespace QuanLyBenhVien
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxMaBN = new System.Windows.Forms.TextBox();
-            this.textBoxMaCSYT = new System.Windows.Forms.TextBox();
             this.textBoxTenBN = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxCMND = new System.Windows.Forms.TextBox();
@@ -55,6 +54,9 @@ namespace QuanLyBenhVien
             this.textBoxTenDuong = new System.Windows.Forms.TextBox();
             this.textBoxQuanHuyen = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.richTextBoxDiUngThuoc = new System.Windows.Forms.RichTextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxMaCSYT = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +110,8 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel1.Controls.Add(this.textBoxTinh, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenDuong, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxQuanHuyen, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.richTextBoxDiUngThuoc, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label13, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 73);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -169,14 +173,6 @@ namespace QuanLyBenhVien
             this.textBoxMaBN.Name = "textBoxMaBN";
             this.textBoxMaBN.Size = new System.Drawing.Size(322, 30);
             this.textBoxMaBN.TabIndex = 14;
-            // 
-            // textBoxMaCSYT
-            // 
-            this.textBoxMaCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMaCSYT.Location = new System.Drawing.Point(801, 78);
-            this.textBoxMaCSYT.Name = "textBoxMaCSYT";
-            this.textBoxMaCSYT.Size = new System.Drawing.Size(322, 30);
-            this.textBoxMaCSYT.TabIndex = 15;
             // 
             // textBoxTenBN
             // 
@@ -339,6 +335,7 @@ namespace QuanLyBenhVien
             this.buttonSua.TabIndex = 31;
             this.buttonSua.Text = "Update";
             this.buttonSua.UseVisualStyleBackColor = false;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // textBoxTinh
             // 
@@ -376,6 +373,34 @@ namespace QuanLyBenhVien
             this.label12.Text = "Thông tin cá nhân";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // richTextBoxDiUngThuoc
+            // 
+            this.richTextBoxDiUngThuoc.Location = new System.Drawing.Point(238, 438);
+            this.richTextBoxDiUngThuoc.Name = "richTextBoxDiUngThuoc";
+            this.richTextBoxDiUngThuoc.Size = new System.Drawing.Size(322, 56);
+            this.richTextBoxDiUngThuoc.TabIndex = 36;
+            this.richTextBoxDiUngThuoc.Text = "";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(68, 435);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(121, 62);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Dị ứng thuốc";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBoxMaCSYT
+            // 
+            this.textBoxMaCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMaCSYT.Location = new System.Drawing.Point(801, 78);
+            this.textBoxMaCSYT.Name = "textBoxMaCSYT";
+            this.textBoxMaCSYT.Size = new System.Drawing.Size(322, 30);
+            this.textBoxMaCSYT.TabIndex = 15;
+            // 
             // BenhNhan_XemThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -405,7 +430,6 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxMaBN;
-        private System.Windows.Forms.TextBox textBoxMaCSYT;
         private System.Windows.Forms.TextBox textBoxTenBN;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxCMND;
@@ -424,5 +448,8 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.TextBox textBoxTinh;
         private System.Windows.Forms.TextBox textBoxTenDuong;
         private System.Windows.Forms.TextBox textBoxQuanHuyen;
+        private System.Windows.Forms.RichTextBox richTextBoxDiUngThuoc;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxMaCSYT;
     }
 }

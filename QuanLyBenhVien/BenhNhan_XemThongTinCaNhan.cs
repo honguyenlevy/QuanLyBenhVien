@@ -27,12 +27,13 @@ namespace QuanLyBenhVien
 
         private void BenhNhan_XemThongTinCaNhan_Load(object sender, EventArgs e)
         {
+
             OracleCommand cmd = new OracleCommand();
 
            
-            cmd.CommandText = "select * from benhnhan";
+            cmd.CommandText = "select * from qtv.benhnhan where mabn= 'BN14775'";
             cmd.Connection = conn;
-
+            
             try
             {
 
@@ -40,13 +41,38 @@ namespace QuanLyBenhVien
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                //dataGridViewThongTinCaNha.DataSource = dt;
+
+                textBoxMaBN.Text = dt.Rows[0][0].ToString();
+
+                textBoxMaCSYT.Text = dt.Rows[0][1].ToString();
+
+                textBoxTenBN.Text = dt.Rows[0][2].ToString();
+
+                textBoxCMND.Text = dt.Rows[0][3].ToString();
+
+                dateTimePicker1.Text = dt.Rows[0][4].ToString();
+
+                textBoxSoNha.Text = dt.Rows[0][5].ToString();
+
+                textBoxTenDuong.Text = dt.Rows[0][6].ToString();
+
+                textBoxQuanHuyen.Text = dt.Rows[0][7].ToString();
+
+                textBoxTinh.Text = dt.Rows[0][8].ToString();
+
+                richTextBoxTSB.Text = dt.Rows[0][9].ToString();
+
+                richTextBoxTSBGD.Text = dt.Rows[0][10].ToString();
+
+                richTextBoxDiUngThuoc.Text = dt.Rows[0][11].ToString();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+           
         }
 
 
@@ -57,20 +83,38 @@ namespace QuanLyBenhVien
 
         private void dataGridViewThongTinCaNha_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //if (dataGridViewThongTinCaNha.CurrentRow != null && dataGridViewThongTinCaNha.CurrentRow.Index > -1)
-            //{
-            //    textBoxMaBN.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[0].Value.ToString() : "";
-            //    textBoxMaCSYT.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[1].Value.ToString() : "";
-            //    textBoxTenBN .Text= dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[2].Value.ToString() : "";
-            //    textBoxCMND.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[3].Value.ToString() : "";
-            //    dateTimePicker1.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[4].Value.ToString() : "";
-            //    textBoxSoNha.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[5].Value.ToString() : "";
-            //    textBoxTenDuong.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[6].Value.ToString() : "";
-            //    textBoxQuanHuyen.Text = dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[7].Value.ToString() : "";
-            //    textBoxTinh.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[8].Value.ToString() : "";
-            //    richTextBoxTSB.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[9].Value.ToString() : "";
-            //    richTextBoxTSBGD.Text= dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value != null ? dataGridViewThongTinCaNha.CurrentRow.Cells[10].Value.ToString() : "";
-            //}
+            
+        }
+
+        private void buttonSua_Click(object sender, EventArgs e)
+        {
+            string sql;
+            OracleCommand cmd = new OracleCommand();
+
+            cmd.Connection = conn;
+            string ngay = "TO_DATE('" + dateTimePicker1.Text + "', 'mm/dd/yyyy')";
+
+
+
+            sql = "UPDATE qtv.BENHNHAN  SET  MACSYT = '" + textBoxMaCSYT.Text + "' , TENBN = '" + textBoxTenBN.Text + "' , NGAYSINH = " + ngay + " , "
+                + " CMND = '" + textBoxCMND.Text + "', SONHA =  " + textBoxSoNha.Text + "  , TENDUONG = '" + textBoxTenDuong.Text + "' , QUANHUYEN = ' "
+                + textBoxQuanHuyen.Text + "', TINHTP = '" + textBoxTinh.Text + "' , TIENSUBENH = ' " + richTextBoxTSB.Text + "',TIENSUBENHGD  = '" + richTextBoxTSBGD.Text + "',DIUNGTHUOC = '" + richTextBoxDiUngThuoc.Text + "' WHERE MABN = '" + textBoxMaBN.Text +"'";
+            
+
+            cmd.CommandText = sql;
+            cmd.CommandType = CommandType.Text;
+            MessageBox.Show(sql);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("CẬP NHẬT THÔNG TIN CÁ NHÂN THÀNH CÔNG");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

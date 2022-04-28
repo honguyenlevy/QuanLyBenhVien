@@ -224,7 +224,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxMaDV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxMaDV.FormattingEnabled = true;
-            this.comboBoxMaDV.Location = new System.Drawing.Point(752, 13);
+            this.comboBoxMaDV.Location = new System.Drawing.Point(752, 17);
             this.comboBoxMaDV.Name = "comboBoxMaDV";
             this.comboBoxMaDV.Size = new System.Drawing.Size(319, 33);
             this.comboBoxMaDV.TabIndex = 43;

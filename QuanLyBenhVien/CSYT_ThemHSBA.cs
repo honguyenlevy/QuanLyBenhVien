@@ -63,7 +63,7 @@ namespace QuanLyBenhVien
 
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;
-            MessageBox.Show(sql);
+          
 
             try
             {
