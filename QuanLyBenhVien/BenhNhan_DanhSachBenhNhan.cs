@@ -35,8 +35,8 @@ namespace QuanLyBenhVien
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.tableLayoutPanelDSBN.Controls.Add(childForm);
-            this.tableLayoutPanelDSBN.Tag = childForm;
+            this.panelDanhSachBenhNhan.Controls.Add(childForm);
+            this.panelDanhSachBenhNhan.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
