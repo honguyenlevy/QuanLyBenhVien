@@ -72,5 +72,18 @@ namespace QuanLyBenhVien
                 OpenFormAdmin(new DangNhap(), sender);
             }
         }
+
+        private void buttonThongBao_Click(object sender, EventArgs e)
+        {
+            buttonXemThongTin.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonXemCaNhan.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonThongBao.BackColor = Color.FromArgb(107, 155, 55);
+
+            OpenFormAdmin(new DangNhap(), sender);
+        }
     }
 }

@@ -37,6 +37,7 @@ namespace QuanLyBenhVien
             this.buttonDSHSBA = new System.Windows.Forms.Button();
             this.buttonThemHSBA = new System.Windows.Forms.Button();
             this.panelCSYT = new System.Windows.Forms.Panel();
+            this.buttonThongBao = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,11 +63,12 @@ namespace QuanLyBenhVien
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.buttonDangXuat, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.buttonThongBao, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.buttonDSHSBADV, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.buttonThemHSBADV, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.buttonDSHSBA, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.buttonThemHSBA, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonDangXuat, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -90,7 +92,7 @@ namespace QuanLyBenhVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
-            this.buttonDangXuat.Location = new System.Drawing.Point(3, 279);
+            this.buttonDangXuat.Location = new System.Drawing.Point(3, 348);
             this.buttonDangXuat.Name = "buttonDangXuat";
             this.buttonDangXuat.Size = new System.Drawing.Size(288, 63);
             this.buttonDangXuat.TabIndex = 3;
@@ -162,6 +164,20 @@ namespace QuanLyBenhVien
             this.panelCSYT.Size = new System.Drawing.Size(894, 697);
             this.panelCSYT.TabIndex = 1;
             // 
+            // buttonThongBao
+            // 
+            this.buttonThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonThongBao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(229)))), ((int)(((byte)(252)))));
+            this.buttonThongBao.Location = new System.Drawing.Point(3, 279);
+            this.buttonThongBao.Name = "buttonThongBao";
+            this.buttonThongBao.Size = new System.Drawing.Size(288, 63);
+            this.buttonThongBao.TabIndex = 4;
+            this.buttonThongBao.Text = "Thông báo";
+            this.buttonThongBao.UseVisualStyleBackColor = false;
+            this.buttonThongBao.Click += new System.EventHandler(this.buttonThongBao_Click);
+            // 
             // CoSoYTe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -190,5 +206,6 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Button buttonThemHSBA;
         private System.Windows.Forms.Panel panelCSYT;
         private System.Windows.Forms.Button buttonDangXuat;
+        private System.Windows.Forms.Button buttonThongBao;
     }
 }

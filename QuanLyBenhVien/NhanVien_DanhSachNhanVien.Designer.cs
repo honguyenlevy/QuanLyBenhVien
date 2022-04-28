@@ -33,8 +33,10 @@ namespace QuanLyBenhVien
             this.dataGridViewList = new System.Windows.Forms.DataGridView();
             this.buttonXemCTTT = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.panelDanhSachNhanVien = new System.Windows.Forms.Panel();
             this.tableLayoutPanelDSNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewList)).BeginInit();
+            this.panelDanhSachNhanVien.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelDSNV
@@ -97,12 +99,21 @@ namespace QuanLyBenhVien
             this.label12.Text = "Danh sách nhân viên";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panelDanhSachNhanVien
+            // 
+            this.panelDanhSachNhanVien.Controls.Add(this.tableLayoutPanelDSNV);
+            this.panelDanhSachNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDanhSachNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.panelDanhSachNhanVien.Name = "panelDanhSachNhanVien";
+            this.panelDanhSachNhanVien.Size = new System.Drawing.Size(1200, 703);
+            this.panelDanhSachNhanVien.TabIndex = 1;
+            // 
             // NhanVien_DanhSachNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.tableLayoutPanelDSNV);
+            this.Controls.Add(this.panelDanhSachNhanVien);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVien_DanhSachNhanVien";
@@ -111,6 +122,7 @@ namespace QuanLyBenhVien
             this.tableLayoutPanelDSNV.ResumeLayout(false);
             this.tableLayoutPanelDSNV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewList)).EndInit();
+            this.panelDanhSachNhanVien.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -121,5 +133,6 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.DataGridView dataGridViewList;
         private System.Windows.Forms.Button buttonXemCTTT;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panelDanhSachNhanVien;
     }
 }

@@ -110,5 +110,22 @@ namespace QuanLyBenhVien
         {
 
         }
+
+        private void buttonThongBao_Click(object sender, EventArgs e)
+        {
+            buttonThemHSBA.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonDSHSBA.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonThemHSBADV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonDSHSBADV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonThongBao.BackColor = Color.FromArgb(107, 155, 55);
+
+            OpenFormAdmin(new ThongBao(), sender);
+        }
     }
 }
