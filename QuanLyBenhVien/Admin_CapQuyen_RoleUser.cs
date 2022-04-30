@@ -96,8 +96,8 @@ namespace QuanLyBenhVien
         {
             
             OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = "SELECT ROLE FROM DBA_ROLES ORDER BY ROLE_ID DESC";
-
+            //cmd.CommandText = "SELECT ROLE FROM DBA_ROLES ORDER BY ROLE_ID DESC";
+            cmd.CommandText = " select distinct(grantee) from Dba_tab_privs where owner='QTV'";
             cmd.Connection = conn;
 
             try
@@ -118,8 +118,9 @@ namespace QuanLyBenhVien
             }
 
 
-            cmd.CommandText = "SELECT username FROM Dba_users order by created desc";
+            //cmd.CommandText = "SELECT username FROM Dba_users order by created desc";
 
+            cmd.CommandText= "select username from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
             cmd.Connection = conn;
 
             try

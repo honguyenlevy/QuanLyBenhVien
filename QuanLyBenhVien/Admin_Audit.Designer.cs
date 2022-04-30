@@ -75,6 +75,7 @@ namespace QuanLyBenhVien
             this.dataGridViewAudit.RowTemplate.Height = 24;
             this.dataGridViewAudit.Size = new System.Drawing.Size(1074, 521);
             this.dataGridViewAudit.TabIndex = 0;
+            this.dataGridViewAudit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAudit_CellContentClick);
             // 
             // tableLayoutPanel2
             // 
@@ -166,6 +167,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin_Audit";
             this.Text = "Admin_Audit";
+            this.Load += new System.EventHandler(this.Admin_Audit_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAudit)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
