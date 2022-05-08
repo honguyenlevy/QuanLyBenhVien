@@ -34,8 +34,8 @@ namespace QuanLyBenhVien
             this.buttonXemCaNhan = new System.Windows.Forms.Button();
             this.buttonXemBenhNhan = new System.Windows.Forms.Button();
             this.buttonDangXuat = new System.Windows.Forms.Button();
-            this.panelBacSi = new System.Windows.Forms.Panel();
             this.buttonThongBao = new System.Windows.Forms.Button();
+            this.panelBacSi = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -124,16 +124,6 @@ namespace QuanLyBenhVien
             this.buttonDangXuat.UseVisualStyleBackColor = false;
             this.buttonDangXuat.Click += new System.EventHandler(this.buttonDangXuat_Click);
             // 
-            // panelBacSi
-            // 
-            this.panelBacSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panelBacSi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBacSi.Location = new System.Drawing.Point(303, 3);
-            this.panelBacSi.Name = "panelBacSi";
-            this.panelBacSi.Size = new System.Drawing.Size(894, 697);
-            this.panelBacSi.TabIndex = 1;
-            this.panelBacSi.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBacSi_Paint);
-            // 
             // buttonThongBao
             // 
             this.buttonThongBao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -148,6 +138,16 @@ namespace QuanLyBenhVien
             this.buttonThongBao.UseVisualStyleBackColor = false;
             this.buttonThongBao.Click += new System.EventHandler(this.button1ThongBao_Click);
             // 
+            // panelBacSi
+            // 
+            this.panelBacSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelBacSi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBacSi.Location = new System.Drawing.Point(303, 3);
+            this.panelBacSi.Name = "panelBacSi";
+            this.panelBacSi.Size = new System.Drawing.Size(894, 697);
+            this.panelBacSi.TabIndex = 1;
+            this.panelBacSi.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBacSi_Paint);
+            // 
             // BacSi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -158,6 +158,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BacSi";
             this.Text = "BacSi";
+            this.Load += new System.EventHandler(this.BacSi_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);

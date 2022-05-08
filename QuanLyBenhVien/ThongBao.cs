@@ -29,7 +29,7 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
             cmd.CommandText = "select * FROM THONGBAO ";
-            
+
             cmd.Connection = conn;
 
             try

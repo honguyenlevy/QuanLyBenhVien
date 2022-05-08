@@ -28,7 +28,8 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
 
-            cmd.CommandText = "select * from HSBA_DV ";
+            //cmd.CommandText = "select * from HSBA_DV ";
+            cmd.CommandText = "select MAHSBA, MADV, NGAY, MAKTV, KETQUA from HSBA_DV ";
 
             cmd.Connection = conn;
 

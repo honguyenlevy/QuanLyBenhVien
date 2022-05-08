@@ -46,7 +46,8 @@ namespace QuanLyBenhVien
                 OracleCommand cmd = new OracleCommand();
 
 
-                cmd.CommandText = "select * from HSBA_DV ";
+                //cmd.CommandText = "select * from HSBA_DV ";
+                cmd.CommandText = "select MAHSBA, MADV, NGAY, MAKTV, KETQUA from HSBA_DV ";
 
                 cmd.Connection = conn;
 
@@ -77,7 +78,8 @@ namespace QuanLyBenhVien
                 OracleCommand cmd = new OracleCommand();
 
 
-                cmd.CommandText = "select * from HSBA ";
+                //cmd.CommandText = "select * from HSBA ";
+                cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from HSBA ";
 
                 cmd.Connection = conn;
 

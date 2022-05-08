@@ -28,9 +28,10 @@ namespace QuanLyBenhVien
         private void buttonEnter_Click(object sender, EventArgs e)
         {
             OracleCommand cmd = new OracleCommand();
-            
-           
-             cmd.CommandText = "select * from hsba where mabn = " + textBoxMaBenhNhan.Text;
+
+
+            //cmd.CommandText = "select * from hsba where mabn = " + textBoxMaBenhNhan.Text;
+            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from hsba where mabn = " + textBoxMaBenhNhan.Text;
             cmd.Connection = conn;
 
             try
@@ -79,7 +80,8 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
 
-            cmd.CommandText = "select * from benhnhan";
+            //cmd.CommandText = "select * from benhnhan";
+            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from benhnhan";
             cmd.Connection = conn;
 
             try
@@ -110,7 +112,8 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
 
-            cmd.CommandText = "select * from benhnhan";
+            //cmd.CommandText = "select * from benhnhan";
+            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from benhnhan";
             cmd.Connection = conn;
 
             try

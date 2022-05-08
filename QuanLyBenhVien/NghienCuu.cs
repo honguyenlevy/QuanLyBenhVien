@@ -90,5 +90,10 @@ namespace QuanLyBenhVien
 
             OpenFormAdmin(new ThongBao(), sender);
         }
+
+        private void NghienCuu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

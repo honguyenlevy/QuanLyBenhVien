@@ -210,6 +210,7 @@ namespace QuanLyBenhVien
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin_SuaCSYT";
             this.Text = "Admin_SuaCSYT";
+            this.Load += new System.EventHandler(this.Admin_SuaCSYT_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListCSYT)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);

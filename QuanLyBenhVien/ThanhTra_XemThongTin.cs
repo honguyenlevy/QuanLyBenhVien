@@ -35,8 +35,9 @@ namespace QuanLyBenhVien
                if (radioButtonBenhNhan.Checked == true)
                 {
                   OracleCommand cmd = new OracleCommand();
-                  cmd.CommandText = "select * from qtv.benhnhan ";
-                  cmd.Connection = conn;
+                //cmd.CommandText = "select * from qtv.benhnhan ";
+                cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from qtv.benhnhan ";
+                cmd.Connection = conn;
 
               try
               {
@@ -60,7 +61,8 @@ namespace QuanLyBenhVien
             if (radioButtonNhanVien.Checked == true)
             {
                 OracleCommand cmd = new OracleCommand();
-                cmd.CommandText = "select* from qtv.nhanvien  ";
+                //cmd.CommandText = "select* from qtv.nhanvien  ";
+                cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien  ";
                 cmd.Connection = conn;
 
                 try
@@ -85,7 +87,8 @@ namespace QuanLyBenhVien
             if (radioButtonCSYT.Checked == true)
             {
                 OracleCommand cmd = new OracleCommand();
-                cmd.CommandText = "select * from qtv.csyt ";
+                //cmd.CommandText = "select * from qtv.csyt ";
+                cmd.CommandText = "select MACSYT, TENCSYT, DCCSYT, SDTCSYT from qtv.csyt ";
                 cmd.Connection = conn;
 
                 try
@@ -110,7 +113,8 @@ namespace QuanLyBenhVien
             if (radioButtonHSBA.Checked == true)
             {
                 OracleCommand cmd = new OracleCommand();
-                cmd.CommandText = "select * from qtv.hsba ";
+                //cmd.CommandText = "select * from qtv.hsba ";
+                cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from qtv.hsba ";
                 cmd.Connection = conn;
 
                 try
@@ -135,7 +139,8 @@ namespace QuanLyBenhVien
             if (radioButtonHSBA_DV.Checked == true)
             {
                 OracleCommand cmd = new OracleCommand();
-                cmd.CommandText = "select * from qtv.hsba_dv ";
+                //cmd.CommandText = "select * from qtv.hsba_dv ";
+                cmd.CommandText = "select MAHSBA, MADV, NGAY, MAKTV, KETQUA from qtv.hsba_dv ";
                 cmd.Connection = conn;
 
                 try

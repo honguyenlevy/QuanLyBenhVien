@@ -96,5 +96,10 @@ namespace QuanLyBenhVien
 
             OpenFormAdmin(new ThongBao(), sender);
         }
+
+        private void BacSi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

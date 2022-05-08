@@ -16,5 +16,10 @@ namespace QuanLyBenhVien
         {
             InitializeComponent();
         }
+
+        private void Admin_SuaCSYT_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
