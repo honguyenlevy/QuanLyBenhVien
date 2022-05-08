@@ -29,8 +29,8 @@ namespace QuanLyBenhVien
 
         private void Admin_DanhSach_Load(object sender, EventArgs e)
         {
-            
 
+            
 
             OracleCommand cmd = new OracleCommand();
             cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type,last_login from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
@@ -45,6 +45,7 @@ namespace QuanLyBenhVien
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
+                
 
             }
             catch (Exception ex)

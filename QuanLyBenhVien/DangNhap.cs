@@ -85,16 +85,16 @@ namespace QuanLyBenhVien
 
                     if (check == "QT")
                     {
-                        OpenForm(new Admin_Menu(), sender);
+                         OpenForm(new Admin_Menu(), sender);
 
-                        //OpenForm(new ThanhTra(), sender);
 
+                        //OpenForm(new Admin_Audit(), sender);
 
                     }
                     else if (check == "NV")
-                    {          
+                    {
                         string role = LayRole.LayThongTinRole(Username);
-                        
+
                         if (role == "THANH TRA")
                         {
                             OpenForm(new ThanhTra(), sender);
@@ -114,9 +114,14 @@ namespace QuanLyBenhVien
                     }
                     else if (check == "BN")
                     {
-                         OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
+                        OpenForm(new BenhNhan_DanhSachBenhNhan(), sender);
 
                         //OpenForm(new BenhNhan_XemThongTinCaNhan(), sender);
+                    }
+
+                    else if (check == "CS")
+                    {
+                        OpenForm(new CoSoYTe(), sender);
                     }
 
                 }

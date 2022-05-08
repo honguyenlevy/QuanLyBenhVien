@@ -100,7 +100,7 @@ namespace QuanLyBenhVien
 
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText = "grant  role_benhnhan  to " + textBoxMaBN.Text;
+                cmd.CommandText = "grant  ROLE_BENHNHAN to " + textBoxMaBN.Text;
 
                 cmd.ExecuteNonQuery();
 

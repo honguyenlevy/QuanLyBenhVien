@@ -30,7 +30,8 @@ namespace QuanLyBenhVien
 
             OracleCommand cmd = new OracleCommand();
 
-           
+
+            //cmd.CommandText = "select MANV,HOTEN,PHAI,NGAYSINH,CMND,QUEQUAN,SODT,CSYT,VAITRO,CHUYENKHOA from qtv.benhnhan where mabn= 'BN14775'";
             cmd.CommandText = "select * from qtv.benhnhan where mabn= 'BN14775'";
             cmd.Connection = conn;
             

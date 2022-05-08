@@ -51,7 +51,8 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
 
-            cmd.CommandText = "select * from qtv.benhnhan";
+            cmd.CommandText = "select MABN,MACSYT,TENBN,CMND,NGAYSINH,SONHA,TENDUONG,QUANHUYEN,TINHTP,TIENSUBENH,TIENSUBENHGD,DIUNGTHUOC from qtv.benhnhan";
+            //cmd.CommandText = "select * from table(qtv.xemBN)";
             cmd.Connection = conn;
 
             try
@@ -62,6 +63,8 @@ namespace QuanLyBenhVien
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridViewList.DataSource = dt;
+
+                
 
             }
             catch (Exception ex)

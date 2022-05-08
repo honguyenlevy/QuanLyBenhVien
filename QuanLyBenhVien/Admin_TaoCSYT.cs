@@ -97,6 +97,23 @@ namespace QuanLyBenhVien
                     // tạo tài khoản cho csyt
                     // gán role csyt cho tài khoản
 
+                    string userCreate;
+
+                    cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.Connection = conn;
+                    cmd.ExecuteNonQuery();
+
+                    userCreate = "  create user " + textBoxMa.Text + " identified by 1  ";
+                    cmd.CommandText = userCreate;
+
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = "grant  ROLE_CSYT  to " + textBoxMa.Text;
+
+                    cmd.ExecuteNonQuery();
+
                 }
                 catch (Exception ex)
                 {

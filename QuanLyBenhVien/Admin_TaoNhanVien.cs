@@ -26,125 +26,152 @@ namespace QuanLyBenhVien
 
         private void buttonTao_Click(object sender, EventArgs e)
         {
-            //bool check = true;
+            bool check = true;
 
-            //if (textBoxMaNV.Text.Trim().Length < 5)
-            //{
-            //    MessageBox.Show("MÃ NHÂN VIÊN ÍT NHẤT PHẢI CÓ 5 KÝ TỰ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxMaNV;
-            //    check = false;
-
-            //}
-
-
-            //if (textBoxHoTen.Text.Trim().Length < 5)
-            //{
-            //    MessageBox.Show("HỌ TÊN KHÔNG ÍT HƠN 5 KÝ TỰ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxHoTen;
-            //    check = false;
-
-            //}
-
-            //if (textBoxQueQuan.Text.Trim().Length < 5)
-            //{
-            //    MessageBox.Show("CHƯA NHẬP QUÊ QUÁN", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxQueQuan;
-            //    check = false;
-            //}
-
-            //if (comboBoxCSYT.Text == "")
-            //{
-            //    MessageBox.Show("CHƯA CHỌN CSYT", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = comboBoxCSYT;
-            //    //check = false;
-
-            //}
-
-            //if (radioButtonNu.Checked == false && radioButtonNam.Checked==false)
-            //{
-            //    MessageBox.Show("CHƯA CHỌN GIỚI TÍNH");
-            //    //check = false;
-            //}
-
-
-            //if (textBoxCMND.Text.Trim().Length < 9)
-            //{
-            //    MessageBox.Show("SỐ CMND KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxCMND;
-            //    //check = false;
-            //}
-
-            //if (textBoxCMND.Text.Trim().Length < 9)
-            //{
-            //    MessageBox.Show("SỐ CMND KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxCMND;
-            //    //check = false;
-            //}
-
-           
-            //    if (textBoxSDT.Text.Trim().Length < 10)
-            //{
-            //    MessageBox.Show("SỐ ĐIỆN THOẠI KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = textBoxSDT;
-            //    //check = false;
-            //}
-            //if (comboBoxVaiTro.Text == "")
-            //{
-            //    MessageBox.Show("CHƯA CHỌN VAI TRÒ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    this.ActiveControl = comboBoxCSYT;
-            //    //check = false;
-
-            //}
-
-            string Phai = "Nam";
-            if (radioButtonNu.Checked == true) Phai = "Nu";
-            string ngaysinh = "TO_DATE('" + dateTimePicker1.Text + "', 'mm/dd/yyyy')";
-            string chuyenkhoa = comboBoxChuyenKhoa.Text;
-            if (comboBoxVaiTro.Text != "Y/BAC SI") chuyenkhoa = "NULL";
-
-            string sql;
-            sql = "INSERT INTO NHANVIEN VALUES " + " ('" + textBoxMaNV.Text + "','" + textBoxHoTen.Text + "','" + Phai + "'," + ngaysinh +
-            "," + textBoxCMND.Text + ",'" + textBoxQueQuan.Text + "','" + textBoxSDT.Text + "','" + comboBoxCSYT.Text + "','" + comboBoxVaiTro.Text + "','" + chuyenkhoa + "' )";
-            MessageBox.Show(sql);
-
-
-            OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = sql;
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = conn;
-
-
-
-
-            try
+            if (textBoxMaNV.Text.Trim().Length < 5)
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("THÊM NHÂN VIÊN THÀNH CÔNG");
-
-                // tạo tài khoản cho nhân viên
-                //gán role nhân viên cho nhân viên 
-
-                string userCreate;
-
-                cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
-                
-
-               
-                cmd.ExecuteNonQuery();
-
-                userCreate = "  create user " + textBoxMaNV.Text + " identified by 1  ";
-                cmd.CommandText = userCreate;
-
-                cmd.ExecuteNonQuery();
-
-                cmd.CommandText = "grant  role_nhanvien  to " + textBoxMaNV.Text;
-
-                cmd.ExecuteNonQuery();
+                MessageBox.Show("MÃ NHÂN VIÊN ÍT NHẤT PHẢI CÓ 5 KÝ TỰ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxMaNV;
+                 check = false;
 
             }
-            catch (Exception ex)
+
+
+            if (textBoxHoTen.Text.Trim().Length < 5)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("HỌ TÊN KHÔNG ÍT HƠN 5 KÝ TỰ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxHoTen;
+                 check = false;
+
+            }
+
+            if (textBoxQueQuan.Text.Trim().Length < 5)
+            {
+                MessageBox.Show("CHƯA NHẬP QUÊ QUÁN", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxQueQuan;
+                check = false;
+            }
+
+            if (comboBoxCSYT.Text == "")
+            {
+                MessageBox.Show("CHƯA CHỌN CSYT", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = comboBoxCSYT;
+                check = false;
+
+            }
+
+            if (radioButtonNu.Checked == false && radioButtonNam.Checked == false)
+            {
+                MessageBox.Show("CHƯA CHỌN GIỚI TÍNH");
+                check = false;
+            }
+
+
+            if (textBoxCMND.Text.Trim().Length < 9)
+            {
+                MessageBox.Show("SỐ CMND KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxCMND;
+                check = false;
+            }
+
+            if (textBoxCMND.Text.Trim().Length < 9)
+            {
+                MessageBox.Show("SỐ CMND KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxCMND;
+                check = false;
+            }
+
+
+            if (textBoxSDT.Text.Trim().Length < 10)
+            {
+                MessageBox.Show("SỐ ĐIỆN THOẠI KHÔNG HỢP LỆ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = textBoxSDT;
+                //check = false;
+            }
+            if (comboBoxVaiTro.Text == "")
+            {
+                MessageBox.Show("CHƯA CHỌN VAI TRÒ", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.ActiveControl = comboBoxCSYT;
+                check = false;
+
+            }
+
+            if (check)
+            {
+                string Phai = "Nam";
+                if (radioButtonNu.Checked == true) Phai = "Nu";
+                string ngaysinh = "TO_DATE('" + dateTimePicker1.Text + "', 'mm/dd/yyyy')";
+                string chuyenkhoa = comboBoxChuyenKhoa.Text;
+                if (comboBoxVaiTro.Text != "Y/BAC SI") chuyenkhoa = "NULL";
+
+                string sql;
+                sql = "INSERT INTO NHANVIEN VALUES " + " ('" + textBoxMaNV.Text + "','" + textBoxHoTen.Text + "','" + Phai + "'," + ngaysinh +
+                "," + textBoxCMND.Text + ",'" + textBoxQueQuan.Text + "','" + textBoxSDT.Text + "','" + comboBoxCSYT.Text + "','" + comboBoxVaiTro.Text + "','" + chuyenkhoa + "' )";
+                MessageBox.Show(sql);
+
+
+                OracleCommand cmd = new OracleCommand();
+                cmd.CommandText = sql;
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = conn;
+
+
+
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("THÊM NHÂN VIÊN THÀNH CÔNG");
+
+                    // tạo tài khoản cho nhân viên
+                    //gán role nhân viên cho nhân viên 
+
+                    string userCreate;
+
+                    cmd.CommandText = "alter session set \"_ORACLE_SCRIPT\"=true";
+
+
+
+                    cmd.ExecuteNonQuery();
+
+                    userCreate = "  create user " + textBoxMaNV.Text + " identified by 1  ";
+                    cmd.CommandText = userCreate;
+
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = "grant  ROLE_NHANVIEN  to " + textBoxMaNV.Text;
+
+                    cmd.ExecuteNonQuery();
+
+
+                    // GÁN THÊM ROLE CHO NHÂN VIÊN NÈ
+
+                    if (comboBoxVaiTro.Text == "THANH TRA")
+                    {
+                        cmd.CommandText = "grant  ROLE_THANHTRA  to " + textBoxMaNV.Text;
+                    }
+                    else if (comboBoxVaiTro.Text == "CO SO Y TE")
+                    {
+                        cmd.CommandText = "grant  ROLE_CSYT  to " + textBoxMaNV.Text;
+                    }
+
+                    else if (comboBoxVaiTro.Text == "Y/BAC SI")
+                    {
+                        cmd.CommandText = "grant  ROLE_YBSI  to " + textBoxMaNV.Text;
+                    }
+
+                    else if (comboBoxVaiTro.Text == "NGHIEN CUU")
+                    {
+                        cmd.CommandText = "grant  ROLE_NGHIENCUU  to " + textBoxMaNV.Text;
+                    }
+
+                    cmd.ExecuteNonQuery();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
