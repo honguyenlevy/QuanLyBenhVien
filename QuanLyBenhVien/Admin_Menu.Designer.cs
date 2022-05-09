@@ -38,10 +38,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelMenuAdmin = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonAudit = new System.Windows.Forms.Button();
             this.buttonTaoNV = new System.Windows.Forms.Button();
             this.buttonTaoBN = new System.Windows.Forms.Button();
             this.buttonTaoCSYT = new System.Windows.Forms.Button();
-            this.buttonAudit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelMenuAdmin.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -199,6 +199,21 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(345, 925);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // buttonAudit
+            // 
+            this.buttonAudit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAudit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAudit.Location = new System.Drawing.Point(4, 739);
+            this.buttonAudit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonAudit.Name = "buttonAudit";
+            this.buttonAudit.Size = new System.Drawing.Size(337, 86);
+            this.buttonAudit.TabIndex = 6;
+            this.buttonAudit.Text = "VIEW AUDIT";
+            this.buttonAudit.UseVisualStyleBackColor = true;
+            this.buttonAudit.Click += new System.EventHandler(this.buttonAudit_Click);
+            // 
             // buttonTaoNV
             // 
             this.buttonTaoNV.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -241,20 +256,6 @@
             this.buttonTaoCSYT.Text = "CREATE CSYT";
             this.buttonTaoCSYT.UseVisualStyleBackColor = true;
             this.buttonTaoCSYT.Click += new System.EventHandler(this.buttonTaoCSYT_Click);
-            // 
-            // buttonAudit
-            // 
-            this.buttonAudit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAudit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAudit.Location = new System.Drawing.Point(4, 739);
-            this.buttonAudit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonAudit.Name = "buttonAudit";
-            this.buttonAudit.Size = new System.Drawing.Size(337, 86);
-            this.buttonAudit.TabIndex = 6;
-            this.buttonAudit.Text = "VIEW AUDIT";
-            this.buttonAudit.UseVisualStyleBackColor = true;
             // 
             // Admin_Menu
             // 

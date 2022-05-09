@@ -35,6 +35,7 @@ namespace QuanLyBenhVien
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxMaBN = new System.Windows.Forms.TextBox();
+            this.textBoxMaCSYT = new System.Windows.Forms.TextBox();
             this.textBoxTenBN = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxCMND = new System.Windows.Forms.TextBox();
@@ -53,10 +54,9 @@ namespace QuanLyBenhVien
             this.textBoxTinh = new System.Windows.Forms.TextBox();
             this.textBoxTenDuong = new System.Windows.Forms.TextBox();
             this.textBoxQuanHuyen = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.richTextBoxDiUngThuoc = new System.Windows.Forms.RichTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBoxMaCSYT = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -171,8 +171,17 @@ namespace QuanLyBenhVien
             this.textBoxMaBN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMaBN.Location = new System.Drawing.Point(238, 16);
             this.textBoxMaBN.Name = "textBoxMaBN";
+            this.textBoxMaBN.ReadOnly = true;
             this.textBoxMaBN.Size = new System.Drawing.Size(322, 30);
             this.textBoxMaBN.TabIndex = 14;
+            // 
+            // textBoxMaCSYT
+            // 
+            this.textBoxMaCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMaCSYT.Location = new System.Drawing.Point(801, 78);
+            this.textBoxMaCSYT.Name = "textBoxMaCSYT";
+            this.textBoxMaCSYT.Size = new System.Drawing.Size(322, 30);
+            this.textBoxMaCSYT.TabIndex = 15;
             // 
             // textBoxTenBN
             // 
@@ -358,21 +367,6 @@ namespace QuanLyBenhVien
             this.textBoxQuanHuyen.Size = new System.Drawing.Size(322, 30);
             this.textBoxQuanHuyen.TabIndex = 35;
             // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1194, 70);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Thông tin cá nhân";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // richTextBoxDiUngThuoc
             // 
             this.richTextBoxDiUngThuoc.Location = new System.Drawing.Point(238, 438);
@@ -393,13 +387,20 @@ namespace QuanLyBenhVien
             this.label13.Text = "Dị ứng thuốc";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBoxMaCSYT
+            // label12
             // 
-            this.textBoxMaCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMaCSYT.Location = new System.Drawing.Point(801, 78);
-            this.textBoxMaCSYT.Name = "textBoxMaCSYT";
-            this.textBoxMaCSYT.Size = new System.Drawing.Size(322, 30);
-            this.textBoxMaCSYT.TabIndex = 15;
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(1194, 70);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Thông tin cá nhân";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BenhNhan_XemThongTinCaNhan
             // 

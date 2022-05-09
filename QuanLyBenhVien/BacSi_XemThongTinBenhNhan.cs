@@ -31,7 +31,7 @@ namespace QuanLyBenhVien
 
 
             //cmd.CommandText = "select * from hsba where mabn = " + textBoxMaBenhNhan.Text;
-            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from hsba where mabn = " + textBoxMaBenhNhan.Text;
+            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from HSBA where mabn = '" + textBoxMaBenhNhan.Text +"'";
             cmd.Connection = conn;
 
             try
@@ -55,8 +55,6 @@ namespace QuanLyBenhVien
         {
             textBoxTenBN.Text = dataGridViewDAHSBA.CurrentRow.Cells[2].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[2].Value.ToString() : "";
            
-
-
             dateTimePicker1.Text = dataGridViewDAHSBA.CurrentRow.Cells[4].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[4].Value.ToString() : "";
             textBoxCMND.Text = dataGridViewDAHSBA.CurrentRow.Cells[3].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[3].Value.ToString() : "";
             textBoxTinhTP.Text = dataGridViewDAHSBA.CurrentRow.Cells[8].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[8].Value.ToString() : "";
@@ -70,7 +68,6 @@ namespace QuanLyBenhVien
 
             richTextBoxTSB.Text= dataGridViewDAHSBA.CurrentRow.Cells[8].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[8].Value.ToString() : "";
 
-            
 
             richTextBoxTSBGD.Text= dataGridViewDAHSBA.CurrentRow.Cells[9].Value != null ? dataGridViewDAHSBA.CurrentRow.Cells[9].Value.ToString() : "";
         }
@@ -81,7 +78,7 @@ namespace QuanLyBenhVien
 
 
             //cmd.CommandText = "select * from benhnhan";
-            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from benhnhan";
+            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from QTV.benhnhan";
             cmd.Connection = conn;
 
             try
@@ -113,7 +110,7 @@ namespace QuanLyBenhVien
 
 
             //cmd.CommandText = "select * from benhnhan";
-            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from benhnhan";
+            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from QTV.benhnhan";
             cmd.Connection = conn;
 
             try

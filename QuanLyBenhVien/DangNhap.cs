@@ -85,10 +85,10 @@ namespace QuanLyBenhVien
 
                     if (check == "QT")
                     {
-                         OpenForm(new Admin_Menu(), sender);
+                        //OpenForm(new Admin_Menu(), sender);
+                        OpenForm(new BacSi_XemThongTinBenhNhan(), sender);
 
 
-                        //OpenForm(new Admin_Audit(), sender);
 
                     }
                     else if (check == "NV")

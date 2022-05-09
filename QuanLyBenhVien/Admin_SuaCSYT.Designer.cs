@@ -78,6 +78,7 @@ namespace QuanLyBenhVien
             this.dataGridViewListCSYT.RowTemplate.Height = 24;
             this.dataGridViewListCSYT.Size = new System.Drawing.Size(450, 626);
             this.dataGridViewListCSYT.TabIndex = 0;
+            this.dataGridViewListCSYT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListCSYT_CellContentClick);
             // 
             // tableLayoutPanel2
             // 
@@ -162,6 +163,7 @@ namespace QuanLyBenhVien
             this.textBoxMa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMa.Location = new System.Drawing.Point(210, 78);
             this.textBoxMa.Name = "textBoxMa";
+            this.textBoxMa.ReadOnly = true;
             this.textBoxMa.Size = new System.Drawing.Size(381, 30);
             this.textBoxMa.TabIndex = 5;
             // 
@@ -199,6 +201,7 @@ namespace QuanLyBenhVien
             this.buttonSua.TabIndex = 32;
             this.buttonSua.Text = "Update";
             this.buttonSua.UseVisualStyleBackColor = false;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // Admin_SuaCSYT
             // 

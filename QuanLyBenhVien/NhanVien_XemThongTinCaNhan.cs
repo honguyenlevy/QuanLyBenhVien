@@ -26,6 +26,29 @@ namespace QuanLyBenhVien
 
         private void NhanVien_XemThongTinCaNhan_Load(object sender, EventArgs e)
         {
+
+            comboBoxVaiTro.DisplayMember = "Text";
+            comboBoxVaiTro.ValueMember = "Value";
+
+            comboBoxVaiTro.Items.Add(new { Text = "THANH TRA", Value = "THANH TRA" });
+            comboBoxVaiTro.Items.Add(new { Text = "CO SO Y TE", Value = "CO SO Y TE" });
+            comboBoxVaiTro.Items.Add(new { Text = "Y/BAC SI", Value = "Y/BAC SI" });
+            comboBoxVaiTro.Items.Add(new { Text = "NGHIEN CUU", Value = "NGHIEN CUU" });
+
+
+
+
+            comboBoxChuyenKhoa.DisplayMember = "Text";
+            comboBoxChuyenKhoa.ValueMember = "Value";
+
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NOI", Value = "NOI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NHI", Value = "NHI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "SAN", Value = "SAN" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "TIM MACH", Value = "TIM MACH" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "NGOAI", Value = "NGOAI" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "DINH DUONG", Value = "DINH DUONG" });
+            comboBoxChuyenKhoa.Items.Add(new { Text = "HOI SUC", Value = "HOI SUC" });
+
             OracleCommand cmd = new OracleCommand();
 
  

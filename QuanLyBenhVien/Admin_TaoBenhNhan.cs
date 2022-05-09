@@ -67,7 +67,7 @@ namespace QuanLyBenhVien
             cmd.Connection = conn;
 
            string ngay = "TO_DATE('" + dateTimePicker1.Text + "', 'mm/dd/yyyy')";
-            sql = "INSERT INTO qtv.BENHNHAN VALUES ( '" + textBoxMaBN.Text + "','" + comboBoxCSYT.Text + "','" + textBoxTenBN.Text + "','" +textBoxCMND.Text + "'," + ngay + ", ' "+ textBoxSoNha.Text + "','" 
+            sql = "INSERT INTO qtv.BENHNHAN(MABN,MACSYT,TENBN,CMND,NGAYSINH,SONHA,TENDUONG,QUANHUYEN,TINHTP,TIENSUBENH,TIENSUBENHGD,DIUNGTHUOC) VALUES ( '" + textBoxMaBN.Text + "','" + comboBoxCSYT.Text + "','" + textBoxTenBN.Text + "','" +textBoxCMND.Text + "'," + ngay + ", ' "+ textBoxSoNha.Text + "','" 
                 + textBoxTenDuong.Text + "','"  + textBoxQuanHuyen.Text + "',' " + textBoxTinhTP.Text + "','" + richTextBoxTSB.Text + "','" + richTextBoxTSBGD.Text + "','" + richTextBoxDiUngThuoc .Text+ "')";
 
             cmd.CommandText = sql;
@@ -77,10 +77,7 @@ namespace QuanLyBenhVien
 
             //create user nua ne
             // gan role benhnhan cho benhnhan moi dc tao
-           
-
-
-           
+               
 
             try
             {

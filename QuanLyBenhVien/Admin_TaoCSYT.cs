@@ -83,11 +83,10 @@ namespace QuanLyBenhVien
                         cmd.Connection = conn;
 
 
-                sql = "INSERT INTO qtv.CSYT VALUES ( '" + textBoxMa.Text + "','" + textBoxTen.Text + "','" + textBoxDiaChi.Text + "','" + textBoxSDT.Text + "')";
+                sql = "INSERT INTO qtv.CSYT(MACSYT,TENCSYT,DCCSYT,SDTCSYT) VALUES ( '" + textBoxMa.Text + "','" + textBoxTen.Text + "','" + textBoxDiaChi.Text + "','" + textBoxSDT.Text + "')";
                
                 cmd.CommandText = sql;
                 cmd.CommandType = CommandType.Text;
-                MessageBox.Show(sql);
 
                 try
                 {

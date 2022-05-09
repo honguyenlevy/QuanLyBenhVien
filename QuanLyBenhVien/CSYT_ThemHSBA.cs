@@ -26,6 +26,18 @@ namespace QuanLyBenhVien
 
         private void CSYT_ThemHSBA_Load(object sender, EventArgs e)
         {
+
+            comboBoxMaKhoa.DisplayMember = "Text";
+            comboBoxMaKhoa.ValueMember = "Value";
+
+            comboBoxMaKhoa.Items.Add(new { Text = "NOI", Value = "NOI" });
+            comboBoxMaKhoa.Items.Add(new { Text = "NHI", Value = "NHI" });
+            comboBoxMaKhoa.Items.Add(new { Text = "SAN", Value = "SAN" });
+            comboBoxMaKhoa.Items.Add(new { Text = "TIM MACH", Value = "TIM MACH" });
+            comboBoxMaKhoa.Items.Add(new { Text = "NGOAI", Value = "NGOAI" });
+            comboBoxMaKhoa.Items.Add(new { Text = "DINH DUONG", Value = "DINH DUONG" });
+            comboBoxMaKhoa.Items.Add(new { Text = "HOI SUC", Value = "HOI SUC" });
+
             OracleCommand cmd = new OracleCommand();
 
 
@@ -59,7 +71,7 @@ namespace QuanLyBenhVien
             cmd.Connection = conn;
             string ngay = "TO_DATE('" + dateTimePickerNgay.Text + "', 'mm/dd/yyyy')";
 
-            sql = "INSERT INTO qtv.HSBA VALUES ( '" + textBoxMaHSBA.Text + "','" + textBoxMaBenhNhan.Text + "'," + ngay + ",'" + richTextBoxChuanDoan.Text + "','" + textBoxMaBacSi.Text +"','" + comboBoxMaKhoa.Text+ "','" + textBoxMaCSYT.Text+"','" + richTextBoxKetLuan.Text+"')";
+            sql = "INSERT INTO qtv.HSBA(MAHSBA,MABN,NGAY,CHUANDOAN,MABS,MAKHOA,MACSYT,KETLUAN) VALUES ( '" + textBoxMaHSBA.Text + "','" + textBoxMaBenhNhan.Text + "'," + ngay + ",'" + richTextBoxChuanDoan.Text + "','" + textBoxMaBacSi.Text +"','" + comboBoxMaKhoa.Text+ "','" + textBoxMaCSYT.Text+"','" + richTextBoxKetLuan.Text+"')";
 
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;

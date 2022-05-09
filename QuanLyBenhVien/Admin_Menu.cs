@@ -246,5 +246,32 @@ namespace QuanLyBenhVien
 
             OpenFormAdmin(new Admin_TaoNhanVien(), sender);
         }
+
+        private void buttonAudit_Click(object sender, EventArgs e)
+        {
+
+            btnDangXuat.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnDanhSach.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThongTinQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnTaoUserRole.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnCapQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            btnThuQuyen.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoNV.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoCSYT.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonTaoBN.BackColor = Color.FromArgb(179, 229, 252);
+
+            buttonAudit.BackColor = Color.FromArgb(107, 155, 55);
+
+            OpenFormAdmin(new Admin_Audit(), sender);
+
+        }
     }
 }

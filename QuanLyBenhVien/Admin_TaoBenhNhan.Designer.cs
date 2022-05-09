@@ -151,6 +151,7 @@ namespace QuanLyBenhVien
             this.textBoxMaBN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMaBN.Location = new System.Drawing.Point(239, 55);
             this.textBoxMaBN.Name = "textBoxMaBN";
+            this.textBoxMaBN.ReadOnly = true;
             this.textBoxMaBN.Size = new System.Drawing.Size(323, 30);
             this.textBoxMaBN.TabIndex = 14;
             // 
