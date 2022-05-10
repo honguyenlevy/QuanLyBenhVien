@@ -99,14 +99,13 @@ namespace QuanLyBenhVien
 
 
 
-            sql = "UPDATE qtv.BENHNHAN  SET  MACSYT = '" + textBoxMaCSYT.Text + "' , TENBN = '" + textBoxTenBN.Text + "' , NGAYSINH = " + ngay + " , "
-                + " CMND = '" + textBoxCMND.Text + "', SONHA =  " + textBoxSoNha.Text + "  , TENDUONG = '" + textBoxTenDuong.Text + "' , QUANHUYEN = ' "
+            sql = "UPDATE qtv.BENHNHAN  SET  MACSYT = TRIM('" + textBoxMaCSYT.Text + "') , TENBN = '" + textBoxTenBN.Text + "' , NGAYSINH = " + ngay + " , "
+                + " CMND = TRIM('" + textBoxCMND.Text + "'), SONHA =  " + textBoxSoNha.Text + "  , TENDUONG = '" + textBoxTenDuong.Text + "' , QUANHUYEN = ' "
                 + textBoxQuanHuyen.Text + "', TINHTP = '" + textBoxTinh.Text + "' , TIENSUBENH = ' " + richTextBoxTSB.Text + "',TIENSUBENHGD  = '" + richTextBoxTSBGD.Text + "',DIUNGTHUOC = '" + richTextBoxDiUngThuoc.Text + "' WHERE MABN = '" + textBoxMaBN.Text +"'";
             
 
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;
-            MessageBox.Show(sql);
 
             try
             {

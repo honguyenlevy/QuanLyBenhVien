@@ -54,7 +54,8 @@ namespace QuanLyBenhVien
  
             cmd.Connection = conn;
 
-            cmd.CommandText = "SELECT MACSYT FROM qtv.CSYT";
+            cmd.CommandText = "SELECT MACSYT FROM qtv.MA_CSYT";
+           
             try
             {
 
@@ -141,9 +142,9 @@ namespace QuanLyBenhVien
             string Phai = "Nam";
             if (radioButtonNu.Checked == true) Phai = "Nu";
 
-            sql = "UPDATE NHANVIEN  SET  HOTEN = '" + textBoxHoTen.Text + "' , PHAI = '" + Phai + "' , NGAYSINH = " + ngay + " , "
-                + " CMND = ' " + textBoxCMND.Text + "' , QUEQUAN = ' " + textBoxQueQuan.Text + " ' , SODT = '" + textBoxSDT.Text + "' , CSYT = ' "
-                + comboBoxCSYT.Text + "', VAITRO = '" + comboBoxVaiTro.Text + "' , CHUYENKHOA = ' " + comboBoxChuyenKhoa.Text + "' WHERE MANV = " + textBoxMaNV.Text;
+            sql = "UPDATE qtv.NHANVIEN  SET  HOTEN = '" + textBoxHoTen.Text + "' , PHAI = '" + Phai + "' , NGAYSINH = " + ngay + " , "
+                + " CMND = ' " + textBoxCMND.Text + "' , QUEQUAN = ' " + textBoxQueQuan.Text + " ' , SODT = '" + textBoxSDT.Text + "' , CSYT = TRIM('"
+                + comboBoxCSYT.Text + "'), VAITRO = '" + comboBoxVaiTro.Text + "' , CHUYENKHOA = TRIM('" + comboBoxChuyenKhoa.Text + "') WHERE MANV = '" + textBoxMaNV.Text +"'";
 
             cmd.CommandText = sql;
             cmd.CommandType = CommandType.Text;

@@ -120,7 +120,7 @@ namespace QuanLyBenhVien
 
             //cmd.CommandText = "SELECT username FROM Dba_users order by created desc";
 
-            cmd.CommandText= "select username from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
+            cmd.CommandText= "select username from dba_users where created > TO_DATE('20220320', 'yyyymmdd') order by username";
             cmd.Connection = conn;
 
             try

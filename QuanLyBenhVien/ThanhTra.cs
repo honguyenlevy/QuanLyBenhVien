@@ -93,7 +93,7 @@ namespace QuanLyBenhVien
 
             buttonThongBao.BackColor = Color.FromArgb(107, 155, 55);
 
-            OpenFormAdmin(new DangNhap(), sender);
+            OpenFormAdmin(new ThongBao(), sender);
         }
     }
 }

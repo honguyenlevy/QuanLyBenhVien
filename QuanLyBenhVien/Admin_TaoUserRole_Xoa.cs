@@ -28,7 +28,7 @@ namespace QuanLyBenhVien
         {
            
             OracleCommand cmd = new OracleCommand();
-            cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type,last_login from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
+            cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type,last_login from dba_users where created > TO_DATE('20220320', 'yyyymmdd') order by username";
 
             cmd.Connection = conn;
 
@@ -60,10 +60,10 @@ namespace QuanLyBenhVien
             switch (checkBoxRole.CheckState)
             {
                 case CheckState.Checked:
-                    
-                  
-                    cmd.CommandText = "SELECT role,role_id,password_required,authentication_type FROM Dba_roles order by role_id desc";
 
+
+                    //cmd.CommandText = "SELECT role,role_id,password_required,authentication_type FROM Dba_roles order by role_id desc";
+                    cmd.CommandText = " select distinct(grantee) from Dba_tab_privs where owner='QTV'";
                     cmd.Connection = conn;
 
                     try
@@ -176,7 +176,8 @@ namespace QuanLyBenhVien
                     cmd.CommandText = "select username, account_status,default_tablespace,created,authentication_type,last_login from dba_users where created > TO_DATE('20220320', 'yyyymmdd')";
                 }
                 else
-                    cmd.CommandText = "SELECT role,role_id,password_required,authentication_type FROM Dba_roles order by role_id desc";
+                    //cmd.CommandText = "SELECT role,role_id,password_required,authentication_type FROM Dba_roles order by role_id desc";
+                    cmd.CommandText = " select distinct(grantee) from Dba_tab_privs where owner='QTV'";
                 cmd.ExecuteNonQuery();
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();

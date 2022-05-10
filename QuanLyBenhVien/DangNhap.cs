@@ -85,8 +85,8 @@ namespace QuanLyBenhVien
 
                     if (check == "QT")
                     {
-                         //OpenForm(new Admin_Menu(), sender);
-                        OpenForm(new Admin_Audit(), sender);
+                         OpenForm(new Admin_Menu(), sender);
+                        //OpenForm(new Admin_Audit(), sender);
 
 
 
@@ -105,7 +105,8 @@ namespace QuanLyBenhVien
                         }
                         else if (role == "Y/BAC SI")
                         {
-                            OpenForm(new BacSi(), sender);
+                            //OpenForm(new BacSi(), sender);
+                            OpenForm(new NhanVien_XemThongTinCaNhan(), sender);
                         }
                         else if (role == "NGHIEN CUU")
                         {

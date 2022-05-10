@@ -26,7 +26,7 @@ namespace QuanLyBenhVien.Controller
 
             OracleCommand cmd = new OracleCommand();
 
-            cmd.CommandText = " select vaitro from qtv.nhanvien where lower(manv)  = lower('"+username +"') ";
+            cmd.CommandText = " select vaitro from qtv.nhanvien where trim(upper(manv))  = trim(upper('"+username +"')) ";
 
             cmd.Connection = conn;
 

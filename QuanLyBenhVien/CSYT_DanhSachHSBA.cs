@@ -31,7 +31,7 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
             //cmd.CommandText = "select * from HSBA";
-            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from HSBA";
+            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from QTV.HSBA";
 
             cmd.Connection = conn;
 
