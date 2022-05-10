@@ -105,6 +105,7 @@ namespace QuanLyBenhVien
             this.radioButtonStandard.TabStop = true;
             this.radioButtonStandard.Text = "Standard audit";
             this.radioButtonStandard.UseVisualStyleBackColor = true;
+            this.radioButtonStandard.CheckedChanged += new System.EventHandler(this.radioButtonStandard_CheckedChanged);
             // 
             // radioButtonFineGrained
             // 
@@ -118,6 +119,7 @@ namespace QuanLyBenhVien
             this.radioButtonFineGrained.TabStop = true;
             this.radioButtonFineGrained.Text = "Fine – grained audit";
             this.radioButtonFineGrained.UseVisualStyleBackColor = true;
+            this.radioButtonFineGrained.CheckedChanged += new System.EventHandler(this.radioButtonFineGrained_CheckedChanged);
             // 
             // tableLayoutPanel3
             // 

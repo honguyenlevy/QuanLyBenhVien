@@ -35,26 +35,60 @@ namespace QuanLyBenhVien
         private void Admin_Audit_Load(object sender, EventArgs e)
         {
 
-            OracleCommand cmd = new OracleCommand();
-            cmd.CommandText =" select username, owner, obj_name, action_name, extended_timestamp, sql_text from dba_audit_trail";
+            radioButtonStandard.Checked = true;
+        }
 
-
-            cmd.Connection = conn;
-
-            try
+        private void radioButtonFineGrained_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonFineGrained.Checked == true)
             {
+                OracleCommand cmd = new OracleCommand();
+                cmd.CommandText = "SELECT DB_USER,OBJECT_NAME,SQL_TEXT,EXTENDED_TIMESTAMP FROM dba_fga_audit_trail order by extended_timestamp desc ";
 
-                cmd.ExecuteNonQuery();
-                OracleDataAdapter da = new OracleDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridViewAudit.DataSource = dt;
+                cmd.Connection = conn;
 
+                try
+                {
+
+                    cmd.ExecuteNonQuery();
+                    OracleDataAdapter da = new OracleDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridViewAudit.DataSource = dt;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+        }
+
+        private void radioButtonStandard_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonStandard.Checked == true)
             {
-                MessageBox.Show(ex.Message);
+                OracleCommand cmd = new OracleCommand();
+                cmd.CommandText = " select USERNAME,OBJ_NAME,SQL_TEXT ,EXTENDED_TIMESTAMP from dba_audit_trail order by extended_timestamp desc ";
+
+                cmd.Connection = conn;
+
+                try
+                {
+
+                    cmd.ExecuteNonQuery();
+                    OracleDataAdapter da = new OracleDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridViewAudit.DataSource = dt;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
+
         }
     }
 }
