@@ -155,7 +155,7 @@ select * from nhanvien where manv='qtv';
 
 select * from table(qtv.xemNV);
 
-GRANT EXECUTE ON xemNV to public;
+
 
 alter session set "_ORACLE_SCRIPT"=true;
 
