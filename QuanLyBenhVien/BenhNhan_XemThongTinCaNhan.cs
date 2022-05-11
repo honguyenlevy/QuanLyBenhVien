@@ -118,5 +118,33 @@ namespace QuanLyBenhVien
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private Form activeForm;
+
+        private void OpenFormAdmin(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelDangXuat.Controls.Add(childForm);
+            this.panelDangXuat.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void buttonDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Choose yes to log out", "Do you want to log out  ?", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                OpenFormAdmin(new DangNhap(), sender);
+            }
+        }
     }
 }

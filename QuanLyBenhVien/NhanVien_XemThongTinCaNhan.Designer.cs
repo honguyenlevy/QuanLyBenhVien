@@ -302,7 +302,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxCSYT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxCSYT.FormattingEnabled = true;
-            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 266);
+            this.comboBoxCSYT.Location = new System.Drawing.Point(211, 262);
             this.comboBoxCSYT.Name = "comboBoxCSYT";
             this.comboBoxCSYT.Size = new System.Drawing.Size(352, 33);
             this.comboBoxCSYT.TabIndex = 15;
@@ -311,7 +311,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxVaiTro.FormattingEnabled = true;
-            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 266);
+            this.comboBoxVaiTro.Location = new System.Drawing.Point(777, 262);
             this.comboBoxVaiTro.Name = "comboBoxVaiTro";
             this.comboBoxVaiTro.Size = new System.Drawing.Size(352, 33);
             this.comboBoxVaiTro.TabIndex = 16;
@@ -357,7 +357,7 @@ namespace QuanLyBenhVien
             // 
             this.comboBoxChuyenKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChuyenKhoa.FormattingEnabled = true;
-            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 335);
+            this.comboBoxChuyenKhoa.Location = new System.Drawing.Point(777, 331);
             this.comboBoxChuyenKhoa.Name = "comboBoxChuyenKhoa";
             this.comboBoxChuyenKhoa.Size = new System.Drawing.Size(352, 33);
             this.comboBoxChuyenKhoa.TabIndex = 21;
@@ -391,11 +391,9 @@ namespace QuanLyBenhVien
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";

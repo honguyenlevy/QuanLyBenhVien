@@ -35,8 +35,8 @@ namespace QuanLyBenhVien
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.tableLayoutPanelChiTiet.Controls.Add(childForm);
-            this.tableLayoutPanelChiTiet.Tag = childForm;
+            this.panelXemChiTiet.Controls.Add(childForm);
+            this.panelXemChiTiet.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -71,6 +71,11 @@ namespace QuanLyBenhVien
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void tableLayoutPanelDSNV_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
