@@ -105,8 +105,8 @@ namespace QuanLyBenhVien
                         }
                         else if (role == "Y/BAC SI")
                         {
-                            //OpenForm(new BacSi(), sender);
-                            OpenForm(new NhanVien_XemThongTinCaNhan(), sender);
+                            OpenForm(new BacSi(), sender);
+                            //OpenForm(new NhanVien_XemThongTinCaNhan(), sender);
                         }
                         else if (role == "NGHIEN CUU")
                         {

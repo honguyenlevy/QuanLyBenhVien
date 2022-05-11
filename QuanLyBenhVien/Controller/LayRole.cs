@@ -26,8 +26,8 @@ namespace QuanLyBenhVien.Controller
 
             OracleCommand cmd = new OracleCommand();
 
-            cmd.CommandText = " select vaitro from qtv.nhanvien where trim(upper(manv))  = trim(upper('"+username +"')) ";
-
+            //cmd.CommandText = " select vaitro from qtv.VIEW_VAITRO where TRIM(manv)= TRIM('" + username +"')";
+            cmd.CommandText = " select vaitro from qtv.NHANVIEN ";
             cmd.Connection = conn;
 
             try
@@ -37,7 +37,7 @@ namespace QuanLyBenhVien.Controller
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                 role = dt.Rows[0][0].ToString();
+                role = dt.Rows[0][0].ToString();
                
             }
             catch (Exception ex)
