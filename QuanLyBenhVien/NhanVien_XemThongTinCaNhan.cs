@@ -74,7 +74,8 @@ namespace QuanLyBenhVien
             }
 
             //cmd.CommandText = "select * from qtv.nhanvien";
-            cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien";
+            //cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien";
+            cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA froM table(qtv.xemNV) ";
             try
             {
 

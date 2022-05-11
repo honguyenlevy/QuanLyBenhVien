@@ -62,7 +62,8 @@ namespace QuanLyBenhVien
             {
                 OracleCommand cmd = new OracleCommand();
                 //cmd.CommandText = "select* from qtv.nhanvien  ";
-                cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien  ";
+                //cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH, CMND, QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien  ";
+                cmd.CommandText = "select MANV, HOTEN, PHAI, NGAYSINH,  QUEQUAN, SODT, CSYT, VAITRO, CHUYENKHOA from qtv.nhanvien  ";
                 cmd.Connection = conn;
 
                 try

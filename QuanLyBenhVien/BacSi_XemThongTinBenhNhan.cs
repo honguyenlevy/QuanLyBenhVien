@@ -30,8 +30,8 @@ namespace QuanLyBenhVien
             OracleCommand cmd = new OracleCommand();
 
 
-            //cmd.CommandText = "select * from hsba where mabn = " + textBoxMaBenhNhan.Text;
-            cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from HSBA where mabn = '" + textBoxMaBenhNhan.Text +"'";
+            cmd.CommandText = "select MABN, MACSYT, TENBN, CMND, NGAYSINH, SONHA, TENDUONG, QUANHUYEN, TINHTP, TIENSUBENH, TIENSUBENHGD, DIUNGTHUOC from QTV.BENHNHAN where TRIM(UPPER(MABN)) = TRIM(UPPER('" + textBoxMaBenhNhan.Text +"')) OR TRIM(UPPER(CMND)) = " + "TRIM(UPPER('" + textBoxMaBenhNhan.Text +"'))";
+            //cmd.CommandText = "select MAHSBA, MABN, NGAY, CHUANDOAN, MABS, MAKHOA, MACSYT, KETLUAN from HSBA where mabn = '" + textBoxMaBenhNhan.Text +"'";
             cmd.Connection = conn;
 
             try
